@@ -87,6 +87,15 @@ html, body{
   color: blue;
   text-decoration: none;
 }
+.LSD-en-con .cabezal-LSD .titulo q{
+  color:greenyellow;
+  text-decoration: none;
+}
+.LSD-en-con .cabezal-LSD .titulo b{
+  color:red;
+  text-decoration: none;
+}
+
 /* section  prueba-entrada*/
 .con-entrada-LSD{
   width: 100%;
