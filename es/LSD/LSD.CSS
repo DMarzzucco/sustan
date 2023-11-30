@@ -1,0 +1,208 @@
+html, body{
+    margin: 0;
+    scroll-behavior: smooth;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Monteserrat Alternates', sans-serif;
+    font-weight: bold;
+}
+
+/* header de prueba-con */
+.prueba-conNav{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  background: linear-gradient(#1e2525b2, #1e252599), url(nd.gif);
+  background-position: 100px;
+}
+.prueba-conNav .logo img{
+  width: 200px;
+  height: 85px;
+}
+.prueba-conNav .nav{
+  text-align: center;
+  padding: 20px 20px;
+  margin-top: 10px;
+  
+}
+.prueba-conNav .nav a{
+  text-decoration: none;
+  color: #B2FF4D;
+  padding: 9px 9px;
+  border-radius: 50px;
+  transition: 1s;
+}
+.prueba-conNav .nav a:hover{
+  background-color:#b2ff4d84;
+  color: #1e2525;
+}
+
+/* container */
+.LSD-en-con{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+/* header */
+.cabezal-LSD{
+  align-items: center;
+  background: linear-gradient(#1e25257a, #282c346c), url(LSDSectCon.gif);
+  background-size: cover;
+  background-position: 100px;
+  height: 500px;
+}
+.cabezal-LSD .enlace{
+  text-align: right;  
+  padding: 20px 20px;
+}
+.cabezal-LSD .enlace a{
+  padding: 20px 20px;
+  color: #fff;
+  font-size: 30px;
+}
+.cabezal-LSD .logo img{
+  width: 100px;
+  height: 143px;
+  padding: 20px 20px;
+  margin-top: -80px;
+}
+.LSD-en-con .cabezal-LSD .titulo {
+  margin-top:200px;
+  color: #fff;
+}
+.LSD-en-con .cabezal-LSD .titulo h1{
+  margin: 0;
+  padding: 40px 50px;
+  font-size: 50px;
+}
+.LSD-en-con .cabezal-LSD .titulo img{
+  width:50px;
+  height:50px;
+  padding: 0 9px;
+}
+.LSD-en-con .cabezal-LSD .titulo a{
+  color: blue;
+  text-decoration: none;
+}
+/* section  prueba-entrada*/
+.con-entrada-LSD{
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#1e252571, #1e25253a), url(navLSD.jpeg);
+  background-size: cover;
+  color: white;
+}
+
+.con-entrada-LSD h1{
+  font-size: 50px;
+  padding: 10px 10px;
+}
+/* explicacion */
+.con-entrada-LSD .explicacion{
+  padding: 20px 20px;
+  font-size: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  transition: 3s;
+  
+}
+.con-entrada-LSD .explicacion img{
+  width: 520px;
+  height: 460px;
+}
+
+/* origen */
+.con-entrada-LSD .origen{
+  padding: 20px 20px;
+  font-size: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+.con-entrada-LSD .origen .hoffmann img{
+  width: 520px;
+  height: 500px;
+}
+
+/* span */
+.con-entrada-LSD .span{
+  text-align: center;
+  padding: 20px 20px;
+}
+
+/* nav */
+.con-entrada-LSD .nav-cont{
+  text-align: center;
+  padding: 20px 20px;
+  background: linear-gradient(#1e252513,#1e2525);
+}
+.con-entrada-LSD .nav-cont a{
+  text-decoration: none;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 10px;
+  transition: 1s;
+}
+.con-entrada-LSD .nav-cont a:hover{
+  background-color: #B2FF4D;
+  color: #1e2525;
+}
+
+/* section prueba-con */
+.prueba-con{
+width: 100%;
+height: 90vh;
+background-color:#282C34;
+}
+
+/* footer */
+footer {
+    background: linear-gradient(90deg, rgba(4,64,0,0.5) 0%, rgba(4,64,0,0.5) 100%), url(footer-inicio1.gif);
+    color: rgb(255, 255, 255);
+    height: 100%;
+    width: 100%;
+  }
+  footer .box{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    padding: 20px 20px;
+  }
+  
+  
+  footer img{
+    width: 200px;
+    height: 200px;
+  }
+  
+  footer .enlaces{
+    margin: 0;
+    background-color:#1e2525;
+    padding: 50px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .enlaces a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color:#B2FF4D;
+    padding: 20px;
+    text-align: center;
+  }
+  footer .copia-deauto{
+    background-color: black;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  
+  
