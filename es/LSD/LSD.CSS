@@ -326,6 +326,37 @@ background-size: cover;
   font-size: 20px;
   color: white;
 }
+.efectos-con .span{
+  color: white;
+  padding: 20px 20px;
+  text-align: center;
+  font-size: 20px;
+}
+/* bottons */
+.button{
+  display: flex;
+  justify-content: center;
+}
+.tab-button{
+  width: 100%;
+  padding: 10px 10px;
+  margin: 0;
+  border: 1px solid white;
+  cursor:pointer;
+  background: #1e2525;
+  color: white;
+  transition: 1s;
+}
+.tab-button:hover{
+  background: red;
+  color: blue;
+}
+.tab{
+  display: none;
+}
+.active{
+  display: block;
+}
 /* footer */
 footer {
     background: linear-gradient(90deg, rgba(4,64,0,0.5) 0%, rgba(4,64,0,0.5) 100%), url(footer-inicio1.gif);
