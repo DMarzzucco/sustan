@@ -325,6 +325,7 @@ background-size: cover;
   padding: 10px 10px;
   font-size: 20px;
   color: white;
+  text-align: right;
 }
 .efectos-con .span{
   color: white;
@@ -347,12 +348,51 @@ background-size: cover;
   color: white;
   transition: 1s;
 }
-.tab-button:hover{
+.tab-button:hover.t1{
+  background: yellow;
+  color: blue;
+}
+.tab-button:hover.t2{
   background: red;
   color: blue;
 }
+.tab-button:hover.t3{
+  background: blue;
+  color: white;
+}
+.tab-button:hover.t4{
+  background: violet;
+  color: blue;
+}
+.tab-button:hover.t5{
+  background: purple;
+  color: blue;
+}
+.tab-button:hover.t6{
+  background: green;
+  color: blue;
+}
+
 .tab{
   display: none;
+  width: 100%;
+  background-color: red;
+  height: 90vh;
+  padding: 20px 20px;
+  text-align: center;
+}
+.tab.aps{
+  background:linear-gradient(rgba(0, 0, 0, 0.532), rgba(128, 128, 128, 0.509) ), url(Alteración\ en\ la\ Percepción\ Sensorial.jpg);
+  background-size: cover;
+  color: white;
+
+}
+.tab h2{
+  font-size: 40px;
+}
+.tab p{
+  font-size: 20px;
+  text-align: center;
 }
 .active{
   display: block;
