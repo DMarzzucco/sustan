@@ -309,7 +309,8 @@ background-size: cover;
 
 /* efectos */
 .efectos-con{
-  background: #1e2525;
+  background:linear-gradient(rgba(0, 0, 0, 0.45), #1e2525), url(EFECTsLSD.jpeg);
+  background-size: cover;
   width: 100%;
   height: 100%;
 }
@@ -327,6 +328,9 @@ background-size: cover;
   color: white;
   text-align: right;
 }
+.efectos-con .p p{
+  text-align: left;
+}
 .efectos-con .span{
   color: white;
   padding: 20px 20px;
@@ -336,21 +340,23 @@ background-size: cover;
 /* bottons */
 .button{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 10px 10px;
 }
 .tab-button{
   width: 100%;
-  padding: 10px 10px;
-  margin: 0;
-  border: 1px solid white;
+  padding: 7px ;
+  border: 1px solid rgba(255, 255, 255, 0.308);
+  border-radius: 20px;
   cursor:pointer;
-  background: #1e2525;
+  background: #1e252500;
   color: white;
+  font-size: 18px;
   transition: 1s;
 }
 .tab-button:hover.t1{
-  background: yellow;
-  color: blue;
+  background: blue;
+  color: white;
 }
 .tab-button:hover.t2{
   background: red;
@@ -367,17 +373,25 @@ background-size: cover;
 .tab-button:hover.t5{
   background: purple;
   color: blue;
+
 }
 .tab-button:hover.t6{
   background: green;
   color: blue;
-}
 
+}
+.contenido-tab{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px;
+}
 .tab{
   display: none;
-  width: 100%;
+  width: 1000px;
   background-color: red;
-  height: 90vh;
+  height: 70vh;
+  border-radius: 20px;
   padding: 20px 20px;
   text-align: center;
 }
@@ -397,6 +411,20 @@ background-size: cover;
 .active{
   display: block;
 }
+/* escala */
+.scale-up-center {
+  animation: scale-up-center 0.4s;
+}
+
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 /* footer */
 footer {
     background: linear-gradient(90deg, rgba(4,64,0,0.5) 0%, rgba(4,64,0,0.5) 100%), url(footer-inicio1.gif);
