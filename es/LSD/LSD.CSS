@@ -326,9 +326,30 @@ background-size: cover;
   padding: 10px 10px;
   font-size: 20px;
   color: white;
-  text-align: right;
 }
-.efectos-con .p p{
+.efectos-con .p1{
+  background-color: red;
+  text-align: right;
+  width: 600px;
+  margin-left: 500px;
+  transition: 1s;
+  transform: translateX(200px);
+}
+.efectos-con .p1:hover{
+  transform: translateX(0);
+}
+.efectos-con .p2{
+  background-color: orangered;
+  width: 600px;
+  margin-left: 200px;
+  transition: 1s;
+  transform: translateX(100px);
+}
+.efectos-con .p2:hover {
+  transform: translateX(0);
+  background-color: orange;
+}
+.efectos-con .p2 p{
   text-align: left;
 }
 .efectos-con .span{
@@ -337,6 +358,7 @@ background-size: cover;
   text-align: center;
   font-size: 20px;
 }
+
 /* bottons */
 .button{
   display: flex;
