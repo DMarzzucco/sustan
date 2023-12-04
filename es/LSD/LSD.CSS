@@ -27,13 +27,13 @@ html, body{
 }
 .LSD-conNav .nav a{
   text-decoration: none;
-  color: #B2FF4D;
+  color: #2ef03b;
   padding: 9px 9px;
   border-radius: 50px;
   transition: 1s;
 }
 .LSD-conNav .nav a:hover{
-  background-color:#b2ff4d84;
+  background-color:#32048d;
   color: #1e2525;
 }
 
@@ -478,6 +478,10 @@ background-size: cover;
 }
 /* PRECAUCIONES */
 .precauciones-con{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.498), #1e2525), url(PRECAUCIONES.jpeg);
@@ -492,37 +496,83 @@ background-size: cover;
   margin: 0;
 }
 .precauciones-con .con-p{
+  width: 500px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px 20px;
+  position: relative;
 }
-.precauciones-con .p{
+.precauciones-con .con-p .t{
+  transition: 1s;
+}
+.precauciones-con .con-p .t.logo{
+  position: relative;
+  z-index: 1;
+  transition: opacity 0.5s ease;
+}
+.precauciones-con .con-p i{
+  font-size: 90px;
+  padding: 10px 10px;
+  border: 5px solid #1e2525;
+  border-radius: 20px;
+  background-color: orangered;
+  color:#1e2525;
+}
+.precauciones-con .con-p:hover .t.logo{
+  opacity: 0;
+}
+.precauciones-con .con-p .t.p{
   text-align: center;
   padding: 20px 20px;
   font-size: 8px;
   cursor: pointer;
-  transition: 2s;
+  transition: 1s;
+  opacity: 0;
+  transform: translateY(0);
+  /* prueba */
+  position: relative;
+  /* top: 20px; 
+  left: 20px; 
+  z-index: 1;
+  opacity: 0;  */
 }
-.precauciones-con .p:hover{
-  transform: scale(2);
+.precauciones-con .con-p:hover .t.p{
+  opacity: 1;
+  scale: 2;
+  transform: translateY(-40px);
   background-color: red;
+  border-radius: 10px;
+  border: 3px solid white;
   padding: 10px 10px;
 }
 .precauciones-con p{
   margin: 0;
 }
 /* details */
-.details{
+/* .details{
   display: flex;
   flex-direction: column;
-  justify-content: left;
-  align-items: start;
+  justify-content: center;
+  align-items: center;
+} */
+.details{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 10px;
 }
 .details details{
   padding: 10px 10px;
   background-color: blue;
   margin: 9px;
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.details details:hover{
+  transform: scale(1.2);
 }
 /* footer */
 footer {
