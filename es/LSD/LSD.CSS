@@ -309,7 +309,7 @@ background-size: cover;
 
 /* efectos */
 .efectos-con{
-  background:linear-gradient(rgba(0, 0, 0, 0.45), #1e2525), url(EFECTsLSD.jpeg);
+  background:linear-gradient(rgba(0, 0, 0, 0.45), #1e2525), url(EFECTOS.gif);
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -328,7 +328,7 @@ background-size: cover;
   color: white;
 }
 .efectos-con .p1{
-  background-color: red;
+  background-color: rgb(50, 8, 136);
   text-align: right;
   width: 600px;
   margin-left: 500px;
@@ -337,9 +337,10 @@ background-size: cover;
 }
 .efectos-con .p1:hover{
   transform: translateX(0);
+  background: linear-gradient(red, orange);
 }
 .efectos-con .p2{
-  background-color: orangered;
+  background-color: orange;
   width: 600px;
   margin-left: 200px;
   transition: 1s;
@@ -347,10 +348,14 @@ background-size: cover;
 }
 .efectos-con .p2:hover {
   transform: translateX(0);
-  background-color: orange;
+  background: linear-gradient(rgb(50, 8, 136), green);
+}
+.efectos-con .p2:hover p{
+  color: white;
 }
 .efectos-con .p2 p{
   text-align: left;
+  color: #1e2525;
 }
 .efectos-con .span{
   color: white;
@@ -398,8 +403,8 @@ background-size: cover;
 
 }
 .tab-button:hover.t6{
-  background: green;
-  color: blue;
+  background: rgb(121, 122, 121);
+  color: rgb(38, 38, 74);
 
 }
 .contenido-tab{
@@ -410,9 +415,9 @@ background-size: cover;
 }
 .tab{
   display: none;
-  width: 1000px;
+  width: 600px;
+  height: 50vh;
   background-color: red;
-  height: 70vh;
   border-radius: 20px;
   padding: 20px 20px;
   text-align: center;
@@ -422,6 +427,31 @@ background-size: cover;
   background-size: cover;
   color: white;
 
+}
+.tab.dte{
+  background:linear-gradient(rgba(0, 0, 0, 0.532), rgba(128, 128, 128, 0.509) ), url(Distorsión\ del\ Tiempo\ y\ Espacio.jpg);
+  background-size: cover;
+  color: white;
+}
+.tab.eea{
+  background:linear-gradient(rgba(0, 0, 0, 0.532), rgba(128, 128, 128, 0.509) ), url(Elevación\ del\ Estado\ de\ Ánimo.jpg);
+  background-size: cover;
+  color: white;
+}
+.tab.cpc{
+  background:linear-gradient(rgba(0, 0, 0, 0.532), rgba(128, 128, 128, 0.509) ), url(Cambio\ en\ el\ Pensamiento\ y\ la\ Cognición.jpg);
+  background-size: cover;
+  color: white;
+}
+.tab.eet{
+  background:linear-gradient(rgba(0, 0, 0, 0.532), rgba(128, 128, 128, 0.509) ), url(Experiencias\ Espirituales\ o\ Transcendentes.jpg);
+  background-size: cover;
+  color: white;
+}
+.tab.cpe{
+  background:linear-gradient(rgba(0, 0, 0, 0.532), rgba(128, 128, 128, 0.509) ), url(Cambio\ en\ la\ Persepción\ del\ Ego.jpg);
+  background-size: cover;
+  color: white;
 }
 .tab h2{
   font-size: 40px;
@@ -446,7 +476,54 @@ background-size: cover;
     transform: scale(1);
   }
 }
-
+/* PRECAUCIONES */
+.precauciones-con{
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.498), #1e2525), url(PRECAUCIONES.jpeg);
+  background-size: cover;
+  padding: 20px 20px;
+  color: white;
+}
+.precauciones-con h1{
+  text-align: center;
+  padding: 20px 20px;
+  font-size: 50px;
+  margin: 0;
+}
+.precauciones-con .con-p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px;
+}
+.precauciones-con .p{
+  text-align: center;
+  padding: 20px 20px;
+  font-size: 8px;
+  cursor: pointer;
+  transition: 2s;
+}
+.precauciones-con .p:hover{
+  transform: scale(2);
+  background-color: red;
+  padding: 10px 10px;
+}
+.precauciones-con p{
+  margin: 0;
+}
+/* details */
+.details{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: start;
+}
+.details details{
+  padding: 10px 10px;
+  background-color: blue;
+  margin: 9px;
+}
 /* footer */
 footer {
     background: linear-gradient(90deg, rgba(4,64,0,0.5) 0%, rgba(4,64,0,0.5) 100%), url(footer-inicio1.gif);
