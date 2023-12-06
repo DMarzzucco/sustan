@@ -551,73 +551,114 @@ background-size: cover;
   margin: 0;
 }
 /* details */
-/* .details{
+.details{
+  width: 100%;
+  padding: 10px 10px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-} */
-.details{
+  justify-content: left;
+  align-items: left;
+}
+/* .details{
   display: grid;
   grid-template-columns: repeat(4,1fr);
   grid-gap: 10px;
+} */
+.details .tabel{
+  width: 1200px;
+  background-color: blue;
+  height: 100%;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap:1px;
+  margin: 9px;
+}
+.details .tabel img{
+  width: 200px;
+  height: 200px;
+  padding: 10px 10px;
 }
 .details details{
   padding: 10px 10px;
   background-color: blue;
   margin: 9px;
-  width: 270px;
-  height: 300px;
+  width: 700px;
+  height: auto;
   border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   transition: 0.5s;
 }
 .details details:hover{
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 .details .t summary{
-  padding: 20px 20px;
   font-size: 20px;
-  margin-top: 20px;
 }
 .details .t p{
   font-size: 15px;
   text-align: left;
 }
+.details .tabel.r1{
+  background: url(t1.jpeg);
+  background-size: cover;
+  /* prueba */
+}
+
 .details .t1{
-  background: linear-gradient(rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.546)), url(t1.jpeg);
+  background-color: rgba(9, 9, 73, 0.452);
+}
+.details .tabel.r2{
+  background: url(t2.jpeg);
   background-size: cover;
 }
 .details .t2{
-  background:linear-gradient(rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.546)), url(t2.jpeg);
+  background-color: rgba(228, 170, 61, 0.651);
+}
+.details .tabel.r3{
+  background: url(t3.jpeg);
   background-size: cover;
 }
 .details .t3{
-  background:linear-gradient(rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.546)), url(t3.jpeg);
+  background-color: rgba(0, 128, 0, 0.555);
+}
+.details .tabel.r4{
+  background: url(t4.jpeg);
   background-size: cover;
 }
 .details .t4{
-  background:linear-gradient(rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.546)), url(t4.jpeg);
+  background: rgba(128, 128, 128, 0.685);
+}
+.details .tabel.r5{
+  background: url(t5.jpeg);
   background-size: cover;
 }
 .details .t5{
-  background:linear-gradient(rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.546)), url(t5.jpeg);
+  background: rgba(0, 0, 0, 0.712);
+}
+.details .tabel.r6{
+  background: url(t6.jpeg);
   background-size: cover;
 }
 .details .t6{
-  background:linear-gradient(rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.546)), url(t6.jpeg);
+  background: rgba(255, 255, 255, 0.651);
+  color: #1e2525;
+}
+.details .tabel.r7{
+  background: url(t7.jpeg);
   background-size: cover;
 }
 .details .t7{
-  background:linear-gradient(rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.546)), url(t7.jpeg);
+  background: rgba(128, 128, 128, 0.664);
+}
+.details .tabel.r8{
+  background: url(t8.jpg);
   background-size: cover;
 }
 .details .t8{
-  background:linear-gradient(rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.546)), url(t8.jpg);
-  background-size: cover;
+  background: rgba(128, 128, 128, 0.658);
+}
+.details .t8 a{
+  padding: 0 7px;
 }
 
 /* footer */
