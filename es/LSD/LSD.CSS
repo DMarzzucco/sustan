@@ -619,6 +619,9 @@ background-size: cover;
   padding: 0 5px;
   font-size: 18px;
 }
+.details .t div{
+  padding: 9px 9px;
+}
 .details .t p{
   font-size: 15px;
   text-align: left;
@@ -627,6 +630,9 @@ background-size: cover;
 }
 .details .t:hover p{
   display: block;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.527);
+  color: #1e2525;
 }
 /* hh */
 .details .t1:hover{
