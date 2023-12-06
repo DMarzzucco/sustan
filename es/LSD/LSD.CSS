@@ -565,7 +565,7 @@ background-size: cover;
   grid-gap: 10px;
 } */
 .details .tabel{
-  width: 1200px;
+  width: 1120px;
   background-color: blue;
   height: 100%;
   border-radius: 10px;
@@ -573,89 +573,153 @@ background-size: cover;
   grid-template-columns: repeat(2,1fr);
   grid-gap:1px;
   margin: 9px;
+  margin-left: 60px;
+}
+.details .tabel:hover img{
+  /* filter: blur(10px); */
+  opacity: 0;
 }
 .details .tabel img{
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   padding: 10px 10px;
+  margin-left: -200px;
 }
 .details details{
   padding: 10px 10px;
   background-color: blue;
   margin: 9px;
-  width: 700px;
+  width: 650px;
   height: auto;
   border-radius: 10px;
   transition: 0.5s;
+  transform: translateX(230px);
+  z-index: 1;
 }
 .details details:hover{
   transform: scale(1.1);
 }
 .details .t summary{
+  display: flex;
   font-size: 20px;
+  list-style: none;
+}
+.details .t:hover summary{
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.793);
+  color: #1e2525;
+  padding: 9px 9px;
+}
+.details .t i{
+  display: none;
+}
+.details .t:hover i{
+  display: block;
+  padding: 0 5px;
+  font-size: 18px;
 }
 .details .t p{
   font-size: 15px;
   text-align: left;
+  padding: 9px 9px;
+  display: none;
 }
-.details .tabel.r1{
+.details .t:hover p{
+  display: block;
+}
+/* hh */
+.details .t1:hover{
   background: url(t1.jpeg);
   background-size: cover;
-  /* prueba */
 }
-
-.details .t1{
-  background-color: rgba(9, 9, 73, 0.452);
-}
-.details .tabel.r2{
+.details .t2:hover{
   background: url(t2.jpeg);
   background-size: cover;
 }
-.details .t2{
-  background-color: rgba(228, 170, 61, 0.651);
-}
-.details .tabel.r3{
+.details .t3:hover{
   background: url(t3.jpeg);
   background-size: cover;
 }
-.details .t3{
-  background-color: rgba(0, 128, 0, 0.555);
-}
-.details .tabel.r4{
+.details .t4:hover{
   background: url(t4.jpeg);
   background-size: cover;
 }
-.details .t4{
-  background: rgba(128, 128, 128, 0.685);
-}
-.details .tabel.r5{
+.details .t5:hover{
   background: url(t5.jpeg);
   background-size: cover;
 }
-.details .t5{
-  background: rgba(0, 0, 0, 0.712);
-}
-.details .tabel.r6{
+.details .t6:hover{
   background: url(t6.jpeg);
   background-size: cover;
-}
-.details .t6{
-  background: rgba(255, 255, 255, 0.651);
   color: #1e2525;
 }
-.details .tabel.r7{
+.details .t7:hover{
   background: url(t7.jpeg);
   background-size: cover;
 }
-.details .t7{
-  background: rgba(128, 128, 128, 0.664);
-}
-.details .tabel.r8{
+.details .t8:hover{
   background: url(t8.jpg);
   background-size: cover;
 }
+/* hh */
+
+.details .tabel.r1{
+  background:linear-gradient(rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.541)), url(/es/LSD/tabblas/t1.jpeg);
+  background-size: cover;
+}
+
+.details .t1{
+  background-color: rgba(9, 9, 73, 0);
+}
+.details .tabel.r2{
+  background:linear-gradient(rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.541)), url(/es/LSD/tabblas/t2.jpeg);
+  background-size: cover;
+}
+.details .t2{
+  background-color: rgba(228, 170, 61, 0);
+}
+.details .tabel.r3{
+  background:linear-gradient(rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.541)), url(/es/LSD/tabblas/t3.jpeg);
+  background-size: cover;
+}
+.details .t3{
+  background-color: rgba(0, 128, 0, 0);
+}
+.details .tabel.r4{
+  background:linear-gradient(rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.541)), url(/es/LSD/tabblas/t4.jpeg);
+  background-size: cover;
+}
+.details .t4{
+  background: rgba(128, 128, 128, 0);
+}
+.details .tabel.r5{
+  background:linear-gradient(rgba(255, 255, 255, 0.178), rgba(255, 255, 255, 0.226)),url(/es/LSD/tabblas/t5.jpeg);
+  background-size: cover;
+}
+.details .t5{
+  background: rgba(0, 0, 0, 0);
+}
+.details .tabel.r6{
+  background:linear-gradient(rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.541)), url(/es/LSD/tabblas/t6.jpeg);
+  background-size: cover;
+}
+.details .t6{
+  background: rgba(255, 255, 255, 0);
+}
+.details .tabel.r7{
+  background:linear-gradient(rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.541)), url(/es/LSD/tabblas/t7.jpeg);
+  background-size: cover;
+}
+.details .t7{
+  background: rgba(128, 128, 128, 0);
+}
+.details .tabel.r8{
+  background:linear-gradient(rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.541)), url(/es/LSD/tabblas/t8.jpg);
+  background-size: cover;
+}
 .details .t8{
-  background: rgba(128, 128, 128, 0.658);
+  background: rgba(128, 128, 128, 0);
 }
 .details .t8 a{
   padding: 0 7px;
