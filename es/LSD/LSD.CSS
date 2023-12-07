@@ -249,11 +249,14 @@ background-size: cover;
 .consumo-con .consumo .card:hover .face.face1.blotters{
   background:linear-gradient(rgba(238, 130, 238, 0.377), rgba(0, 0, 255, 0.377)), url(blooters.png);
   transform: translateY(0px);
+  background-size: cover;
+  background-position: center;
   color: white;
 }
 .consumo-con .consumo .card .face.face2.blotters{
   background: linear-gradient(rgba(0, 0, 255, 0.438), rgba(0, 128, 0, 0.479)), url(blooters2.png);
   background-size: cover;
+  background-position: center;
   color: white;
 }
 /* liquid */
@@ -334,29 +337,46 @@ background-size: cover;
   margin-left: 500px;
   transition: 1s;
   transform: translateX(200px);
+  animation: cl 2s ease infinite alternate;
+}
+@keyframes cl {
+  0%{
+    background-color: rgba(51, 8, 136, 0.472);
+  }
+  50%{
+    background-color: rgba(255, 0, 0, 0.452);
+  }
+  100%{
+    background-color: rgba(0, 128, 0, 0.437);
+  }
 }
 .efectos-con .p1:hover{
   transform: translateX(0);
-  background: linear-gradient(red, orange);
 }
 .efectos-con .p2{
-  background-color: orange;
+  background-color: green;
   width: 600px;
   margin-left: 200px;
   transition: 1s;
   transform: translateX(100px);
+  animation: dk 2s ease infinite alternate;
+}
+@keyframes dk {
+  0%{
+    background-color: rgba(0, 128, 0, 0.459);
+  }
+  50%{
+    background-color: rgba(255, 0, 0, 0.452);
+  }
+  100%{
+    background-color: rgba(0, 0, 255, 0.503);
+  }
 }
 .efectos-con .p2:hover {
   transform: translateX(0);
-  background: linear-gradient(rgb(50, 8, 136), green);
 }
-.efectos-con .p2:hover p{
-  color: white;
-}
-.efectos-con .p2 p{
-  text-align: left;
-  color: #1e2525;
-}
+
+
 .efectos-con .span{
   color: white;
   padding: 20px 20px;
@@ -446,11 +466,13 @@ background-size: cover;
 .tab.eet{
   background:linear-gradient(rgba(0, 0, 0, 0.532), rgba(128, 128, 128, 0.509) ), url(Experiencias\ Espirituales\ o\ Transcendentes.jpg);
   background-size: cover;
+  background-position: center;
   color: white;
 }
 .tab.cpe{
   background:linear-gradient(rgba(0, 0, 0, 0.532), rgba(128, 128, 128, 0.509) ), url(Cambio\ en\ la\ Persepción\ del\ Ego.jpg);
   background-size: cover;
+  background-position: center;
   color: white;
 }
 .tab h2{
@@ -611,6 +633,29 @@ background-size: cover;
   color: #1e2525;
   padding: 9px 9px;
 }
+/*  */
+.details .t.t2:hover summary{
+  border: 1px solid  rgba(242, 126, 126, 0.537);
+  border-radius: 10px;
+  background-color: rgba(242, 126, 126, 0.537);
+  color: #1e2525;
+  padding: 9px 9px;
+}
+.details .t.t3:hover summary{
+  border: 1px solid rgba(0, 149, 255, 0.595);
+  border-radius: 10px;
+  background-color: rgba(0, 149, 255, 0.595);
+  color: white;
+  padding: 9px 9px;
+}
+.details .t.t6:hover summary{
+  border: 1px solid rgba(172, 255, 47, 0.686);
+  border-radius: 10px;
+  background-color: rgba(172, 255, 47, 0.686);
+  color: #1e2525;
+  padding: 9px 9px;
+}
+/*  */
 .details .t i{
   display: none;
 }
@@ -634,39 +679,67 @@ background-size: cover;
   background-color: rgba(255, 255, 255, 0.527);
   color: #1e2525;
 }
+/*  */
+.details .t.t2:hover p{
+  display: block;
+  border-radius: 10px;
+  background-color: rgba(242, 126, 126, 0.537);
+  color: #1e2525;
+}
+.details .t.t3:hover p{
+  display: block;
+  border-radius: 10px;
+  background-color: rgba(0, 149, 255, 0.595);
+  color: white;
+}
+.details .t.t6:hover p{
+  display: block;
+  border-radius: 10px;
+  background-color: rgba(172, 255, 47, 0.686);
+  color: #1e2525;
+}
+/*  */
 /* hh */
 .details .t1:hover{
   background: url(t1.jpeg);
   background-size: cover;
+  background-position: center;
 }
 .details .t2:hover{
   background: url(t2.jpeg);
   background-size: cover;
+  background-position: center;
 }
 .details .t3:hover{
   background: url(t3.jpeg);
   background-size: cover;
+  background-position: 50% 78%;
 }
 .details .t4:hover{
   background: url(t4.jpeg);
   background-size: cover;
+  background-position: 50% 28%;
 }
 .details .t5:hover{
-  background: url(t5.jpeg);
+  background: linear-gradient(rgba(0, 0, 0, 0.526), rgba(0, 0, 0, 0.543)), url(t5.jpeg);
   background-size: cover;
+  background-position: center;
 }
 .details .t6:hover{
   background: url(t6.jpeg);
   background-size: cover;
+  background-position: center;
   color: #1e2525;
 }
 .details .t7:hover{
   background: url(t7.jpeg);
   background-size: cover;
+  background-position: 50% 30%;
 }
 .details .t8:hover{
   background: url(t8.jpg);
   background-size: cover;
+  background-position: 50% 76%;
 }
 /* hh */
 
@@ -748,11 +821,25 @@ background-size: cover;
   background:orange;
   transition: 0.5s;
   color: #1e2525;
+  animation: animate 0.2s ease infinite alternate;
+}
+@keyframes animate {
+  0%{
+    background-color:orange;
+    color: #1e2525;
+  }
+  50%{
+    background-color: yellow;
+    color: grey;
+  }
+  100%{
+    background-color: red;
+    color: white;
+  }
+  
 }
 .conciencias-con .h:hover{
-  background-color: red;
   transform: scale(1.2);
-  color: white;
 }
 .conciencias-con h1{
   text-align: center;
@@ -768,6 +855,22 @@ background-size: cover;
 
 .conciencias-con span{
   padding: 10px 10px;
+  text-align: center;
+  font-size: 26px;
+  margin: 9px;
+  background-color: rgba(255, 0, 0, 0.504);
+  animation: we 3s ease infinite alternate;
+}
+@keyframes we {
+  0%{
+    background-color: rgba(255, 0, 0, 0.504);
+  }
+  50%{
+    background-color: rgba(255, 68, 0, 0.501);
+  }
+  80%{
+    background-color: rgba(248, 93, 36, 0.475);
+  }
 }
 .conciencias-con p{
   text-align: center;
