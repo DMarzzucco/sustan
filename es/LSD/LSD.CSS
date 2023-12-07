@@ -13,7 +13,7 @@ html, body{
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 50px;
   background: linear-gradient(rgba(0, 0, 255, 0.37), rgba(255, 0, 0, 0.288), rgba(0, 128, 0, 0.438)), url(Nav\ .gif);
-  background-position: 100px;
+  background-position: 50% 60%;
 }
 .LSD-conNav .logo img{
   width: 200px;
@@ -51,7 +51,7 @@ html, body{
   align-items: center;
   background: linear-gradient(#1e25257a, #282c346c), url(LSDSectCon.gif);
   background-size: cover;
-  background-position: 100px;
+  background-position: center;
   height: 500px;
 }
 .cabezal-LSD .enlace{
@@ -761,6 +761,7 @@ background-size: cover;
 .details .tabel.r3{
   background:linear-gradient(rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.541)), url(/es/LSD/tabblas/t3.jpeg);
   background-size: cover;
+  background-position: 50% 100%;
 }
 .details .t3{
   background-color: rgba(0, 128, 0, 0);
@@ -883,7 +884,9 @@ background-size: cover;
 .conciencias-con .p:hover{
   transform: translateY(-60px);
   scale: 1.2;
-  background-color: green;
+  background: linear-gradient(rgba(0, 0, 0, 0.303), rgba(0, 0, 0, 0.349)), url(/es/LSD/concen-gif/pre-p.gif);
+  background-size: cover;
+  background-position: center;
 }
 .conciencias-con .concen-d{
   width: 1000px;
@@ -899,12 +902,21 @@ background-size: cover;
 }
 .conciencias-con .concen-d .tan{
   padding: 10px 10px;
-  background: blue;
   border-radius: 10px;
   transition: 0.5s;
 }
 .conciencias-con .concen-d .tan:hover{
   scale: 1.3;
+}
+.conciencias-con .concen-d .tan.hppd{
+  background: linear-gradient(rgba(0, 0, 0, 0.498), rgba(0, 0, 0, 0.617)), url(/es/LSD/concen-gif/HPPD.gif);
+  background-size: cover;
+  background-position: center;
+}
+.conciencias-con .concen-d .tan.psico{
+  background: linear-gradient( rgba(158, 155, 155, 0.153), rgba(144, 142, 142, 0.221)), url(/es/LSD/concen-gif/ezquis.gif);
+  background-position: center;
+  background-size: cover;
 }
 /* footer */
 footer {
