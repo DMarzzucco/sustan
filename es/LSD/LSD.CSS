@@ -802,8 +802,12 @@ background-size: cover;
   background: rgba(128, 128, 128, 0);
 }
 .details .t8 a{
-  padding: 0 7px;
+  padding: 0 px;
+  text-decoration: none;
+  color: red;
+  transition: 4s;
 }
+
 /* CONCECUENCIAS */
 .conciencias-con{
   display: flex;
