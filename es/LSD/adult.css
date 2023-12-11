@@ -12,7 +12,7 @@ html, body{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 50px;
-  background: linear-gradient(rgba(0, 0, 255, 0.37), rgba(255, 0, 0, 0.288), rgba(0, 128, 0, 0.438)), url(Nav\ .gif);
+  background: linear-gradient(rgba(0, 0, 0, 0.678), rgba(0, 0, 0, 0.678), black, black), url(Nav\ .gif);
   background-position: 50% 60%;
 }
 .LSD-conNav .logo img{
@@ -101,7 +101,23 @@ html, body{
 .NBOMES-con .nav-entrada a:hover{
   background-color: rgba(255, 255, 255, 0.486);
   color: #1e2525;
+  font-size: 20px;
 }
+/*  */
+.Características h2{
+  font-size: 50px;
+  padding: 20px 20px;
+}
+.Riesgos h2{
+  font-size: 50px;
+  padding: 20px 20px;
+
+}
+.Diferencias h2{
+  font-size: 50px;
+  padding: 20px 20px;
+}
+
 /*  */
 /* caracteristcas */
 .Características{
@@ -125,7 +141,7 @@ color: white;
     grid-gap:2px;
     padding: 20px 20px;
     width: 600px;
-    background-color: green;
+    transition: 1s;
 
 }
 .Características .car:hover{
@@ -133,18 +149,21 @@ color: white;
   background-color: #2ef03b00;
 }
 .Características .car .c{
-    height: 300px;
+    height: 100%;
     width: 300px;
-    background-color: blue;
+    background: url(/es/LSD/NMBOMES/caract2.png);
+    background-size: cover;
+    background-position: center;
 }
 .Características .car .c li{
     padding: 10px 10px;
     margin-top: 15px;
     opacity: 1;
+    font-size: 20px;
 }
 .Características .car .c img{
     height: 300px;
-    width: 300px;
+    width: 360px;
 }
 
 /* riesgos */
@@ -194,11 +213,59 @@ color: white;
   display: none;
 }
 .Riesgos .riesg .t{
-    background-color: blue;
+    background-color: rgba(0, 0, 255, 0.911);
     transition: 0.5s;
     z-index: 1;
     transform: translateX(170px);
 }
+/*  */
+.Riesgos .riesg .t.a{
+  background:url(/es/LSD/NMBOMES/riesgos/1\ sobredosis.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.Riesgos .riesg .t.b{
+  background:url(/es/LSD/NMBOMES/riesgos/2\ problemas\ cardios.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.Riesgos .riesg .t.c{
+  background:url(/es/LSD/NMBOMES/riesgos/3\ hipertermia.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.Riesgos .riesg .t.d{
+  background:url(/es/LSD/NMBOMES/riesgos/4\ convulsiones.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.Riesgos .riesg .t.e{
+  background:url(/es/LSD/NMBOMES/riesgos/5\ alteracion.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.Riesgos .riesg .t.f{
+  background:url(/es/LSD/NMBOMES/riesgos/6\ comporatmientos.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.Riesgos .riesg .t.g{
+  background:url(/es/LSD/NMBOMES/riesgos/7\ desorientacion.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.Riesgos .riesg .t.h{
+  background:url(/es/LSD/NMBOMES/riesgos/8\ problemas\ respiratorios.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.Riesgos .riesg .t.i{
+  background:url(/es/LSD/NMBOMES/riesgos/9\ problemas\ renales.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/*  */
 .Riesgos .riesg .t:hover{
   opacity: 0.3;
 }
@@ -233,11 +300,24 @@ color: white;
   text-align: center;
   padding: 20px 20px;
 }
+.botones button{
+  background-color: #2ef03b00;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0);
+  margin: 9px;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  transition: 0.5s;
+}
+.botones button:hover{
+  background-color: rgba(255, 255, 255, 0.384);
+  color: #1e2525;
+  font-size: 15px;
+}
 .bottones-h{
   width:100%;
   height: 35px;
-  background-color: #2ef03b09;
-  border-radius: 10px solid white;
   margin: 0;
   margin-left: 50px;
 }
@@ -245,7 +325,7 @@ color: white;
 .botones{
   width: 159px;
   height: 100%;
-  margin-top: 160px;
+  margin-top: 49px;
 }
 .tablas-h .tab{
   display: none;
