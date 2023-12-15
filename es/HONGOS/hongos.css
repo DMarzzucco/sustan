@@ -12,8 +12,9 @@ html, body{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 50px;
-  background: linear-gradient(#1e2525b2, #1e252599), url(nd.gif);
-  background-position: 100px;
+  background: linear-gradient(#1e2525b2, #1e252599), url(nav.gif);
+  background-position: 50% 67%;
+  background-size: cover;
 }
 .prueba-conNav .logo img{
   width: 200px;
@@ -49,8 +50,8 @@ html, body{
 /* header */
 .cabezal-prueba{
   align-items: center;
-  background: linear-gradient(#00ffff72, #1e25253a), url(weed.gif);
-  background-size: 100px;
+  background:linear-gradient(rgba(0, 0, 0, 0.459), rgba(0, 0, 0, 0.377)) ,url(nav.gif);
+  background-size: cover;
   background-position: center;
   height: 500px;
 }
@@ -101,28 +102,346 @@ html, body{
   
 }
 
-.con-entrada-prueba .nav-cont{
+
+/* psilocibina entrada*/
+.Psilocibina{
+width: 100%;
+height: 100vh;
+background: linear-gradient(#1e25257c, #1e252585), url(que\ son.jpg);
+background-size: cover;
+background-position: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+color: white;
+}
+.Psilocibina h1{
+  padding: 10px 10px;
+  font-size: 50px;
+  margin: 0;
+}
+.Psilocibina .contexto{
+  width: 680px;
+  text-align: center;
+  font-size: 20px;
+}
+.Psilocibina .nav-cont{
   text-align: center;
   padding: 20px 20px;
+  width: 100%;
+  /* background:linear-gradient(#1e252500,#1e2525); */
 }
-.con-entrada-prueba .nav-cont a{
+.Psilocibina .nav-cont a{
   text-decoration: none;
   color: white;
   padding: 10px 10px;
   border-radius: 10px;
   transition: 1s;
 }
-.con-entrada-prueba .nav-cont a:hover{
-  background-color: #B2FF4D;
+.Psilocibina .nav-cont a:hover{
+  background-color: #5f4dff;
+  color: #1e2525;
+  font-size: 20px;
+}
+.Psilocibina .sp{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background:linear-gradient(#1e252507, #1e2525);
+  /* background-color: #1e2525; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px 10px;
+}
+.Psilocibina .sp span{
+  padding: 10px 10px;
+}
+.Psilocibina .sp a{
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  padding: 10px 10px;
+  width: 20px;
+  height: 20px;
+  transition: 0.5s;
+  transform: translateY(0px);
+}
+.Psilocibina .sp a:hover{
+  transform: translateY(15px);
+  scale: 1.2;
+}
+/*  */
+.explicacion{
+  width: 100%;
+  height: 100%;
+  padding: 10px 10px;
+  background: linear-gradient(#1e25252a,#1e2525), url(origen.jpg);
+  background-size: cover;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.explicacion .origen{
+  width: 900px;
+  display: grid;
+  grid-template-columns: repeat(2,10fr);
+  grid-gap: 100px;
+  background:linear-gradient(black, rgba(0, 0, 0, 0.281)), url(aztecas.jpg);
+  background-size: cover;
+  border-radius: 20px;
+}
+.explicacion .origen span{
+  width: 9px;
+  height: 9px;
+}
+.explicacion h1{
+  padding: 20px 20px;
+  font-size: 50px;
+}
+.explicacion .origen p{
+  padding: 20px 20px;
+}
+.explicacion .grid{
+  display: grid;
+  grid-template-columns: repeat(2, 10fr);
+  grid-gap:40px;
+  padding: 10px 10px;
+}
+.explicacion .grid h2{
+  font-size: 30px;
+}
+.explicacion .grid p{
+  margin-top:59px;
+  padding: 10px 10px;
+  text-align: center;
+}
+.explicacion .grid .ter-p{
+  margin-top: 90px;
+}
+.explicacion .grid .contep{
+  background: linear-gradient(#1e2525a6,#1e252565), url(/es/HONGOS/origen/hip.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 10px 10px;
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 0.637);
+  height: 400px;
+
+}
+.explicacion .grid .ter{
+  background: linear-gradient(#1e25259d,#1e25258f), url(/es/HONGOS/origen/ter.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 10px 10px;
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 0.637);
+  height: 400px;
+}
+.explicacion .up{
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.explicacion .up a{
+  color: rgba(255, 255, 255, 0.582);
+  font-size: 17px;
+  text-align: center;
+  text-decoration: none;
+  width:30px ;
+  transition: 0.5s;
+  transform: translateY(0px);
+}
+.explicacion .up a:hover{
+  transform: translateY(-15px);
+  font-size: 30px;
+  color: white;
+}
+/* consumo */
+.consumo{
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: #1e2525;
+  padding: 20px 20px;
+}
+.consumo h1{
+  font-size: 50px;
+  padding: 10px 10px;
+}
+.consumo .p{
+  width: 500px;
+  height: 500px;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: 0.5s;
+}
+.consumo .p:hover{
+  background-color: white;
   color: #1e2525;
 }
-
-/* section prueba-con */
-.prueba-con{
-width: 100%;
-height: 90vh;
-background-color:#282C34;
+.consumo .p p{
+  text-align: left;
+  padding: 30px 30px;
+  margin-top: -10px;
 }
+.list-con{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: blue;
+  padding: 20px 20px;
+}
+.list-con .kan{
+  width: 870px;
+  background-color: #1e2525;
+  padding: 10px 10px;
+  border-radius: 20px;
+  margin: 9px;
+  transition: 0.5s;
+}
+.list-con .kan:hover{
+  transform: scale(1.1);
+}
+.list-con .kan p{
+  display: none;
+  transition: 1.5s;
+}
+.list-con .kan:hover p{
+  display: block;
+}
+.list-con .kan details{
+  display: none;
+  transition: 1s;
+}
+.list-con .kan:hover details{
+  display: block;
+}
+.list-con .kan summary{
+  padding: 9px 9px;
+  color: white;
+  border: 1px solid white;
+  margin: 9px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.6s;
+}
+.list-con .kan summary:hover{
+  background: green;
+  border: 1px solid green;
+  color: #1e2525;
+  transform: scale(1.1);
+}
+.list-con .kan div{
+  padding: 10px 10px;
+  margin: 8px;
+  background: green;  
+}
+.list-con .up{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.list-con .up a{
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  transition: 0.5s;
+}
+.list-con .up a:hover{
+  font-size: 28px;
+}
+/* efectos */
+.efectos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  padding: 20px 20px;
+  margin: 0;
+  color: white;
+  background: #1e2525;
+}
+.efectos h1{
+  padding: 10px 10px;
+  font-size: 50px;
+}
+.efectos .p{
+  width: 400px;
+  height: 400px;
+  border: 1px solid white;
+  padding: 8px 8px;
+  transition: 0.5s;
+}
+.efectos .p:hover{
+  background-color: white;
+  color: #1e2525;
+}
+.ifect{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px 20px;
+  margin: 0;
+  color: white;
+  background: blue;
+ 
+}
+.ifect .efectos-filas{
+  display: grid;
+  grid-template-columns: repeat(4,10fr);
+  grid-gap:40px;
+  padding: 10px 10px;
+}
+.ifect .efectos-filas .cars{
+  background-color: red;
+}
+.ifect .efectos-filas .cars .title{
+  background-color: green;
+  width:300px;
+  height:300px;
+  z-index: 2;
+}
+.ifect .efectos-filas .cars .conten{
+  background-color: violet;
+  transform: translateY(-317px);
+  opacity: 0;
+  width:300px;
+  height:300px;
+}
+.ifect .efectos-filas .cars .conten:hover{
+  opacity: 1;
+}
+
 /* hibridos */
 .hibridos{
   background: #1e2525;
