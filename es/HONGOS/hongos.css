@@ -649,7 +649,7 @@ color: white;
   height: 100%;
   display: grid;
   grid-template-columns: repeat(3, 7fr);
-  grid-gap: 10px;
+  grid-gap: 100px;
   padding: 40px 40px;
 }
 .cont-precau .ke{
@@ -677,7 +677,13 @@ color: white;
   cursor: pointer;
   display: none;
   transform: translateY(-214px);
+  position: absolute;
+  z-index: 1;
   margin: 0;
+  transition: 0.5s;
+}
+.cont-precau .conten:hover{
+  scale: 1.1;
 }
 .cont-precau .conten p{
   padding: 10px 10px;

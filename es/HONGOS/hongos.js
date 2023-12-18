@@ -17,9 +17,16 @@ titulos.forEach(function(titulo) {
     // Agrega evento de clic al título
     titulo.addEventListener('click', function() {
         var contenido = document.getElementById('conten' + num);
-        contenido.style.display = (contenido.style.display === 'none' || contenido.style.display === '') ? 'block' : 'none';
+        
+        // Agrega la clase de animación cuando se muestra el contenido
+        if (contenido.style.display === 'none' || contenido.style.display === '') {
+            contenido.style.display = 'block';
+            contenido.classList.add('escala-up');
+        } else {
+            contenido.style.display = 'none';
+        }
     });
-
+    
     // Agrega evento de clic al contenido para ocultarlo
     var contenido = document.getElementById('conten' + num);
     contenido.addEventListener('click', function(event) {
@@ -28,5 +35,6 @@ titulos.forEach(function(titulo) {
 
         // Oculta el contenido
         contenido.style.display = 'none';
+        contenido.classList.remove='escala-up'
     });
 });
