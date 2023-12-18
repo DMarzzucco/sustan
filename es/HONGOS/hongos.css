@@ -6,7 +6,10 @@ html, body{
     font-family: 'Monteserrat Alternates', sans-serif;
     font-weight: bold;
 }
-
+::-webkit-scrollbar {
+  width: 1px; /* Ancho del scrollbar */
+  background: #1e252500;
+}
 /* header de prueba-con */
 .prueba-conNav{
   display: grid;
@@ -301,6 +304,7 @@ color: white;
   padding: 30px 30px;
   margin-top: -10px;
 }
+/*  */
 .list-con{
   width: 100%;
   height: 100%;
@@ -520,7 +524,7 @@ color: white;
 .tbls .tab{
   display: none;
   width: 100%;
-  height: 70vh;
+  height: 100vh;
   background-color: blue;
 }
 .tbls .tab h2{
@@ -529,24 +533,194 @@ color: white;
   padding: 10px 10px;
 }
 .tbls .tab details{
-  display: flex;
   width: 100%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   padding: 10px 10px;
-  background-color: green;
+  margin-top: 30px;
+  /* background-color: green; */
 }
 .tbls .tab summary{
-  background: white;
-  width: 600px;
+  background: rgba(255, 255, 255, 0.144);
+  width: 900px;
+  padding: 10px 10px;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  margin-left: 170px;
+  transition: 0.7s;
+}
+.tbls .tab summary:hover{
+  border: 1px solid transparent;
+  font-size: 23px;
+  background-color: white;
+  color: #1e2525;
+}
+.tbls .tab div{
+  background-color: red;
+  border-radius: 20px;
+  width: 700px;
+  margin-left: 260px;
+  padding: 20px 20px;
 }
 /*  */
 .tbls .active{
   display: block;
 }
 /*  */
+/* PRECAUCIONES */
+.precauciones{
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: #1e2525;
+  padding: 20px 20px;
+}
+.precauciones h1{
+  font-size: 43px;
+  padding: 10px 10px;
+
+}
+.precauciones .p{
+  width: 500px;
+  height: 500px;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: 0.5s;
+
+}
+.precauciones .p:hover{
+  background-color: white;
+  color: #1e2525;
+
+}
+.precauciones .p p{
+  text-align: left;
+  padding: 30px 30px;
+  margin-top: -10px;
+
+}
+
+/* CONCECUENCIAS */
+.concecuencias{
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: #1e2525;
+  padding: 20px 20px;
+
+}
+.concecuencias h1{
+  font-size: 39px;
+  padding: 10px 10px;
+
+}
+.concecuencias .p{
+  width: 500px;
+  height: 500px;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: 0.5s;
+
+}
+.concecuencias .p:hover{
+  background-color: white;
+  color: #1e2525;
+
+}
+.concecuencias .p p{
+  text-align: left;
+  padding: 30px 30px;
+  margin-top: -10px;
+
+}
+/*  */
+.pstv-cons{
+  width: 100%;
+  height: 70vh;
+  background: grey;
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.pstv-cons .positiv{
+  width: 600px;
+  background-color: red;
+  padding: 8px 8px;
+  text-align: center;
+}
+.pstv-cons .positiv h2{
+  font-size: 30px;
+}
+
+/*  */
+.concens-con{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px;
+
+}
+.concens-con .negativo{
+  width: 600px;
+  background-color: red;
+  padding: 8px 8px;
+  text-align: center;
+}
+.concens-con .negativo h2{
+  font-size: 30px;
+}
+.concens-con .filas-negativ{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3,10fr);
+  grid-gap:30px;
+  padding: 10px 10px;
+  background-color: pink;
+}
+.concens-con .filas-negativ .tabs{
+  width: 400px;
+  height: 400px;
+  background-color: blue;
+  padding: 9px 9px;
+}
+.concens-con .filas-negativ .tabs h3{
+  font-size: 20px;
+  text-align: center;
+}
+.concens-con .filas-negativ .tabs p{
+  text-align: center;
+}
+.concens-con .filas-negativ .tabs .bd-p{
+  margin-top: 60px;
+}
+.concens-con .filas-negativ .tabs .mentali-impact{
+  margin-top: 57px;  
+}
+
 
 /* footer */
 footer {
