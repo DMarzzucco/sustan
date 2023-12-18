@@ -323,7 +323,7 @@ color: white;
   padding: 10px 10px;
   border-radius: 20px;
   margin: 9px;
-  transition: 0.5s;
+  transition: 1s;
 }
 .list-con .kan:hover{
   transform: scale(1.1);
@@ -415,7 +415,7 @@ color: white;
   align-items: center;
   width: 100%;
   height: 100%;
-  padding: 20px 20px;
+  padding: 10px 10px;
   margin: 0;
   color: white;
   background: blue;
@@ -427,26 +427,42 @@ color: white;
   grid-gap:40px;
   padding: 10px 10px;
 }
+.ifect .efectos-filas .tart{
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .ifect .efectos-filas .title{
   background-color: green;
   width:300px;
   height:300px;
   z-index: 1;
-  transition: 0.6s;
+  transition: 1s;
+  transform: translateY(0);
+  cursor: pointer;
 }
 .ifect .efectos-filas .title:hover {
-  opacity: 0;
+  /* opacity: 0; */
+  transform: translateY(-200px);
+  height: 100px;
 }
 .ifect .efectos-filas .title:hover h2{
-  display: none;
+  /* display: none; */
 }
 .ifect .efectos-filas .conten{
   background-color: rgba(238, 130, 238, 0);
-  transform: translateX(-340px);
+  transform: translateY(2px);
   width:300px;
   height:300px;
+  cursor: pointer;
+  /* display: none; */
+  /* z-index: 1; */
+  position: absolute;
 }
 .ifect .efectos-filas .conten:hover{
+  display: block;
 }
 
 /* hibridos */
@@ -647,22 +663,37 @@ color: white;
 .cont-precau{
   width: 100%;
   height: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 7fr);
-  grid-gap: 100px;
-  padding: 40px 40px;
-}
-.cont-precau .ke{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 10px 10px;
+}
+.cont-precau .grid-prec{
+  display: grid;
+  grid-template-columns: repeat(3, 10fr);
+  grid-gap: 20px;
+  padding: 20px 20px;
+  justify-items: center;
+
+}
+
+
+.cont-precau .ke{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
 }
 .cont-precau .titulos{
   position: relative;
-  width: 400px;
+  width: 300px;
   height: 200px;
   padding: 7px 7px;
   background-color: red;
   cursor: pointer;
+  border-radius: 100%;
   transition: 0.6s;
   /* z-index: 1; */
 }
@@ -676,7 +707,7 @@ color: white;
   background-color: blue;
   cursor: pointer;
   display: none;
-  transform: translateY(-214px);
+  /* transform: translateY(-214px); */
   position: absolute;
   z-index: 1;
   margin: 0;
