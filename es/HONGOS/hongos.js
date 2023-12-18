@@ -7,50 +7,9 @@ function openTab(tabName){
     document.getElementById(tabName).classList.add('active', 'escala-up');   
 }
 // precau
-// contenid1
-// document.getElementById('titulo1').addEventListener('click', function(){
-//     var contenido= document.getElementById('conten1');
-//     contenido.style.display=(
-//         contenido.style.display === 'none'|| contenido.style.display === '' ) ? 'block' : 'none';
-// });
-
-// document.getElementById('titulo2').addEventListener('click', function(){
-//     var contenido= document.getElementById('conten2');
-//     contenido.style.display=(
-//         contenido.style.display === 'none'|| contenido.style.display === '' ) ? 'block' : 'none';
-// });
-
-
-// document.getElementById('titulo3').addEventListener('click', function(){
-//     var contenido= document.getElementById('conten3');
-//     contenido.style.display=(
-//         contenido.style.display === 'none'|| contenido.style.display === '' ) ? 'block' : 'none';
-// });
-
-
-// document.getElementById('titulo4').addEventListener('click', function(){
-//     var contenido= document.getElementById('conten4');
-//     contenido.style.display=(
-//         contenido.style.display === 'none'|| contenido.style.display === '' ) ? 'block' : 'none';
-// });
-
-
-// document.getElementById('titulo5').addEventListener('click', function(){
-//     var contenido= document.getElementById('conten5');
-//     contenido.style.display=(
-//         contenido.style.display === 'none'|| contenido.style.display === '' ) ? 'block' : 'none';
-// });
-
-
-// document.getElementById('titulo6').addEventListener('click', function(){
-//     var contenido= document.getElementById('conten6');
-//     contenido.style.display=(
-//         contenido.style.display === 'none'|| contenido.style.display === '' ) ? 'block' : 'none';
-// });
-// Selecciona todos los elementos con clase "titulos"
 var titulos = document.querySelectorAll('.titulos');
 
-// Itera sobre los elementos y agrega un event listener a cada uno
+// Itera sobre los elementos y agrega un event list a cada uno
 titulos.forEach(function(titulo) {
     // Obtén el número del título y del contenido
     var num = titulo.id.replace('titulo', ''); // Extrae el número de id
