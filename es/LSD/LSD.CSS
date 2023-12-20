@@ -582,9 +582,6 @@ background-size: cover;
   align-items: left;
 }
 /* .details{
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
-  grid-gap: 10px;
 } */
 .details .tabel{
   width: 1120px;
