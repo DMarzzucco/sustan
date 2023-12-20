@@ -744,7 +744,7 @@ background-size: cover;
 /* hh */
 
 .details .tabel.r1{
-  background:linear-gradient(rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.541)), url(/es/LSD/tabblas/t1.jpeg);
+  background:linear-gradient(rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.541)), url(/LSD/tabblas/t1.jpeg);
   background-size: cover;
 }
 
@@ -752,14 +752,14 @@ background-size: cover;
   background-color: rgba(9, 9, 73, 0);
 }
 .details .tabel.r2{
-  background:linear-gradient(rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.541)), url(/es/LSD/tabblas/t2.jpeg);
+  background:linear-gradient(rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.541)), url(/LSD/tabblas/t2.jpeg);
   background-size: cover;
 }
 .details .t2{
   background-color: rgba(228, 170, 61, 0);
 }
 .details .tabel.r3{
-  background:linear-gradient(rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.541)), url(/es/LSD/tabblas/t3.jpeg);
+  background:linear-gradient(rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.541)), url(/LSD/tabblas/t3.jpeg);
   background-size: cover;
   background-position: 50% 100%;
 }
@@ -767,35 +767,35 @@ background-size: cover;
   background-color: rgba(0, 128, 0, 0);
 }
 .details .tabel.r4{
-  background:linear-gradient(rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.541)), url(/es/LSD/tabblas/t4.jpeg);
+  background:linear-gradient(rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.541)), url(/LSD/tabblas/t4.jpeg);
   background-size: cover;
 }
 .details .t4{
   background: rgba(128, 128, 128, 0);
 }
 .details .tabel.r5{
-  background:linear-gradient(rgba(255, 255, 255, 0.178), rgba(255, 255, 255, 0.226)),url(/es/LSD/tabblas/t5.jpeg);
+  background:linear-gradient(rgba(255, 255, 255, 0.178), rgba(255, 255, 255, 0.226)),url(/LSD/tabblas/t5.jpeg);
   background-size: cover;
 }
 .details .t5{
   background: rgba(0, 0, 0, 0);
 }
 .details .tabel.r6{
-  background:linear-gradient(rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.541)), url(/es/LSD/tabblas/t6.jpeg);
+  background:linear-gradient(rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.541)), url(/LSD/tabblas/t6.jpeg);
   background-size: cover;
 }
 .details .t6{
   background: rgba(255, 255, 255, 0);
 }
 .details .tabel.r7{
-  background:linear-gradient(rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.541)), url(/es/LSD/tabblas/t7.jpeg);
+  background:linear-gradient(rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.541)), url(/LSD/tabblas/t7.jpeg);
   background-size: cover;
 }
 .details .t7{
   background: rgba(128, 128, 128, 0);
 }
 .details .tabel.r8{
-  background:linear-gradient(rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.541)), url(/es/LSD/tabblas/t8.jpg);
+  background:linear-gradient(rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.541)), url(/LSD/tabblas/t8.jpg);
   background-size: cover;
 }
 .details .t8{
@@ -804,8 +804,15 @@ background-size: cover;
 .details .t8 a{
   padding: 0 px;
   text-decoration: none;
-  color: red;
-  transition: 4s;
+  color: #1e2525;
+  transition: 0.5s;
+}
+.details .t8 a:hover{
+  background-color: #1e2525;
+  border-radius: 30%;
+  color: white;
+  font-size: 17px;
+  padding: 4px 4px;
 }
 
 /* CONCECUENCIAS */
@@ -888,7 +895,7 @@ background-size: cover;
 .conciencias-con .p:hover{
   transform: translateY(-60px);
   scale: 1.2;
-  background: linear-gradient(rgba(0, 0, 0, 0.303), rgba(0, 0, 0, 0.349)), url(/es/LSD/concen-gif/pre-p.gif);
+  background: linear-gradient(rgba(0, 0, 0, 0.303), rgba(0, 0, 0, 0.349)), url(/LSD/concen-gif/pre-p.gif);
   background-size: cover;
   background-position: center;
 }
@@ -913,12 +920,12 @@ background-size: cover;
   scale: 1.3;
 }
 .conciencias-con .concen-d .tan.hppd{
-  background: linear-gradient(rgba(0, 0, 0, 0.498), rgba(0, 0, 0, 0.617)), url(/es/LSD/concen-gif/HPPD.gif);
+  background: linear-gradient(rgba(0, 0, 0, 0.498), rgba(0, 0, 0, 0.617)), url(/LSD/concen-gif/HPPD.gif);
   background-size: cover;
   background-position: center;
 }
 .conciencias-con .concen-d .tan.psico{
-  background: linear-gradient( rgba(158, 155, 155, 0.153), rgba(144, 142, 142, 0.221)), url(/es/LSD/concen-gif/ezquis.gif);
+  background: linear-gradient( rgba(158, 155, 155, 0.153), rgba(144, 142, 142, 0.221)), url(/LSD/concen-gif/ezquis.gif);
   background-position: center;
   background-size: cover;
 }

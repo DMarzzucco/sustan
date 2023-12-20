@@ -228,7 +228,7 @@ color: white;
   margin-top: 90px;
 }
 .explicacion .grid .contep{
-  background: linear-gradient(#1e2525a6,#1e252565), url(/es/HONGOS/origen/hip.jpg);
+  background: linear-gradient(#1e2525a6,#1e252565), url(/HONGOS/origen/hip.jpg);
   background-size: cover;
   background-position: center;
   padding: 10px 10px;
@@ -238,7 +238,7 @@ color: white;
 
 }
 .explicacion .grid .ter{
-  background: linear-gradient(#1e25259d,#1e25258f), url(/es/HONGOS/origen/ter.jpg);
+  background: linear-gradient(#1e25259d,#1e25258f), url(/HONGOS/origen/ter.jpg);
   background-size: cover;
   background-position: center;
   padding: 10px 10px;
@@ -277,7 +277,9 @@ color: white;
   justify-content: center;
   align-items: center;
   color: white;
-  background: #1e2525;
+  background:linear-gradient(#1e2525c4, #1e2525c4 ), url(/HONGOS/consumo/consumo.jpg);
+  background-size: cover;
+  background-position: center;
   padding: 20px 20px;
 }
 .consumo h1{
@@ -307,26 +309,63 @@ color: white;
 /*  */
 .list-con{
   width: 100%;
-  height: 100%;
+  height: 120vh;
   margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: white;
-  background: blue;
+  background:linear-gradient(#1e2525c4, #1e2525c4 ), url(/HONGOS/consumo/lista-con.jpg);
+  background-size: cover;
+  background-position: center;
   padding: 20px 20px;
 }
 .list-con .kan{
   width: 870px;
-  background-color: #1e2525;
   padding: 10px 10px;
   border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.278);
   margin: 9px;
   transition: 1s;
 }
+/*  */
+.list-con .kan.fresco{
+  background:linear-gradient(#1e2525c4, #1e2525c4 ), url(/HONGOS/consumo/fresco.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.list-con .kan.seco{
+  background:linear-gradient(#1e2525c4, #1e2525c4 ), url(/HONGOS/consumo/seco.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.list-con .kan.extracto{
+  background:linear-gradient(#1e2525c4, #1e2525c4 ), url(/HONGOS/consumo/extracto.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.list-con .kan.alimento{
+  background:linear-gradient(#1e2525c4, #1e2525c4 ), url(/HONGOS/consumo/alimentos.jpg);
+  background-size: cover;
+  background-position: center;
+
+}
+.list-con .kan.infusion{
+  background:linear-gradient(#1e2525c4, #1e2525c4 ), url(/HONGOS/consumo/infusion.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/*  */
 .list-con .kan:hover{
   transform: scale(1.1);
+}
+.list-con .kan h2{
+  text-align: center;
+}
+.list-con .kan:hover h2{
+  text-align: left;
 }
 .list-con .kan p{
   display: none;
@@ -442,6 +481,7 @@ color: white;
   transition: 1s;
   transform: translateY(0);
   cursor: pointer;
+  padding: 9px 9px;
 }
 .ifect .efectos-filas .title:hover {
   /* opacity: 0; */
@@ -452,8 +492,8 @@ color: white;
   /* display: none; */
 }
 .ifect .efectos-filas .conten{
-  background-color: rgba(238, 130, 238, 0);
-  transform: translateY(2px);
+  background-color: red;
+  transform: translateY(0.1px);
   width:300px;
   height:300px;
   cursor: pointer;
@@ -731,7 +771,9 @@ color: white;
   justify-content: center;
   align-items: center;
   color: white;
-  background: #1e2525;
+  background:linear-gradient(#1e2525af, #1e2525af) ,url(/HONGOS/concecuencias/concecuencias.png);
+  background-position: center;
+  background-size:cover ;
   padding: 20px 20px;
 
 }
@@ -767,43 +809,58 @@ color: white;
 .pstv-cons{
   width: 100%;
   height: 70vh;
-  background: grey;
+  background:linear-gradient(rgba(255, 192, 203, 0.608), rgba(255, 192, 203, 0.608)) ,url(/HONGOS/concecuencias/positivo.jpeg);
+  background-position: center;
+  background-size: cover;
   padding: 10px 10px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 
 }
 .pstv-cons .positiv{
-  width: 600px;
-  background-color: red;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 8px 8px;
-  text-align: center;
 }
 .pstv-cons .positiv h2{
-  font-size: 30px;
+  font-size: 50px;
+  padding: 10px 10px;
 }
-
+.pstv-cons .positiv p {
+  width: 500px;
+  padding: 10px 10px;
+}
 /*  */
 .concens-con{
   width: 100%;
-  height: auto;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background:linear-gradient(rgba(0, 0, 0, 0.584),#1e2525),url(/HONGOS/concecuencias/negativo.jpg);
+  background-position: center;
+  background-size:cover ;
   padding: 10px 10px;
+  color: white;
 
 }
 .concens-con .negativo{
   width: 600px;
-  background-color: red;
   padding: 8px 8px;
   text-align: center;
 }
 .concens-con .negativo h2{
   font-size: 30px;
+  padding: 10px 10px;
+}
+.concens-con .negativo span{
+  background-color: white;
+  padding: 7px 7px;
+  color: #1e2525;
 }
 .concens-con .filas-negativ{
   width: 100%;
@@ -811,13 +868,16 @@ color: white;
   grid-template-columns: repeat(3,10fr);
   grid-gap:30px;
   padding: 10px 10px;
-  background-color: pink;
 }
 .concens-con .filas-negativ .tabs{
   width: 400px;
   height: 400px;
-  background-color: blue;
   padding: 9px 9px;
+  transition: 0.5s;
+}
+.concens-con .filas-negativ .tabs:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(255, 192, 203, 0.608);
 }
 .concens-con .filas-negativ .tabs h3{
   font-size: 20px;
@@ -829,10 +889,41 @@ color: white;
 .concens-con .filas-negativ .tabs .bd-p{
   margin-top: 60px;
 }
+.concens-con .filas-negativ .tabs .bd-p a{
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
+}
+.concens-con .filas-negativ .tabs .bd-p:hover a{
+  font-size: 17px;
+  background-color: white;
+  color: #1e2525;
+  padding: 7px 7px;
+}
 .concens-con .filas-negativ .tabs .mentali-impact{
   margin-top: 57px;  
 }
+/*  */
+.concens-con .filas-negativ .tabs.bad-trip{
+  background:linear-gradient(rgba(0, 0, 0, 0.584),#1e2525),url(/HONGOS/concecuencias/badtrip.jpg);
+  background-position: center;
+  background-size:cover ;
 
+}
+.concens-con .filas-negativ .tabs.problem{
+  background:linear-gradient(rgba(0, 0, 0, 0.584),#1e2525),url(/HONGOS/concecuencias/salud\ mental.jpg);
+  background-position: center;
+  background-size:cover ;
+  
+}
+.concens-con .filas-negativ .tabs.psicosis{
+  background:linear-gradient(rgba(0, 0, 0, 0.584),#1e2525),url(/HONGOS/concecuencias/psicosis.jpg);
+  background-position: center;
+  background-size:cover ;
+  
+}
+
+/*  */
 
 /* footer */
 footer {
