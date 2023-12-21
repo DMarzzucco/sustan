@@ -316,7 +316,7 @@ color: white;
   justify-content: center;
   align-items: center;
   color: white;
-  background:linear-gradient(#1e2525c4, #1e2525c4 ), url(/HONGOS/consumo/lista-con.jpg);
+  background:linear-gradient(#1e2525c4, #1e2525 ), url(/HONGOS/consumo/lista-con.jpg);
   background-size: cover;
   background-position: center;
   padding: 20px 20px;
@@ -425,11 +425,13 @@ color: white;
   align-items: center;
   text-align: center;
   width: 100%;
-  height: 100vh;
+  height: 102vh;
   padding: 20px 20px;
   margin: 0;
   color: white;
-  background: #1e2525;
+  background:linear-gradient(#1e2525ac, #1e2525ac) ,url(/HONGOS/efectos/efectos.webp);
+  background-position: center;
+  background-size: cover;
 }
 .efectos h1{
   padding: 10px 10px;
@@ -446,25 +448,51 @@ color: white;
   background-color: white;
   color: #1e2525;
 }
+.efectos button{
+  margin: 10px;
+  font-size: 50px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  margin-top: 70px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.efectos button:hover{
+  font-size: 60px;
+  color: pink;
+}
 /*  */
 .ifect{
-  display: flex;
-  flex-direction: column;
+  display: none;
+  /* flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   width: 100%;
   height: 100%;
   padding: 10px 10px;
   margin: 0;
   color: white;
-  background: blue;
+  background:linear-gradient(#1e2525af,#1e2525),url(/HONGOS/efectos/ifect.png);
+  background-size: cover;
  
+}
+.ifect .intor{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 70px;
 }
 .ifect .efectos-filas{
   display: grid;
-  grid-template-columns: repeat(4,10fr);
-  grid-gap:40px;
+  grid-template-columns: repeat(3,10fr);
+  grid-gap:26px;
   padding: 10px 10px;
+}
+.ifect .efectos-filas div{
+  border-radius: 10px;
 }
 .ifect .efectos-filas .tart{
   height: auto;
@@ -474,37 +502,180 @@ color: white;
   align-items: center;
 }
 .ifect .efectos-filas .title{
-  background-color: green;
-  width:300px;
+  background-color: blue;
+  width:500px;
   height:300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   z-index: 1;
   transition: 1s;
   transform: translateY(0);
   cursor: pointer;
+  border-radius: 0;
   padding: 9px 9px;
 }
 .ifect .efectos-filas .title:hover {
-  /* opacity: 0; */
-  transform: translateY(-200px);
+  transform: translateY(-132px);
   height: 100px;
+  background: white;
 }
-.ifect .efectos-filas .title:hover h2{
-  /* display: none; */
+.ifect .efectos-filas .title h2{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 9px;
+  width: 412px;
+  height: 80px;
+  border: 2px solid white;
+  background-color: rgba(255, 255, 255, 0.041);
+  color: white;
 }
+/*  */
+.ifect .efectos-filas .title.c{
+  background: linear-gradient(rgba(128, 0, 128, 0.692), rgba(255, 255, 255, 0.5)),url(/HONGOS/efectos/alteracion.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+.ifect .efectos-filas .title.c:hover h2{
+  color:purple;
+}
+.ifect .efectos-filas .title.c:hover{
+  background: white;
+}
+.ifect .efectos-filas .conten.c{
+  background: linear-gradient(#740f7eb6,#740f7eb6),url(/HONGOS/efectos/alteracion.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+/*  */
+.ifect .efectos-filas .title.d{
+  background:linear-gradient(#0e4d4d73,#0e4d4d), url(/HONGOS/efectos/cognicion.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+.ifect .efectos-filas .title.d:hover h2{
+  color: #0e4d4d;
+}
+.ifect .efectos-filas .title.d:hover{
+  background: white;
+}
+.ifect .efectos-filas .conten.d{
+  background:linear-gradient(#0e4d4d9a,#0e4d4d9a), url(/HONGOS/efectos/cognicion.jpeg);
+  background-position: center;
+  background-size: cover;
+
+}
+
+/*  */
+.ifect .efectos-filas .title.e{
+  background:linear-gradient(#1e252573,#1e2525), url(/HONGOS/efectos/experiencias\ sensoriales.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+.ifect .efectos-filas .title.e:hover h2{
+  color: green;
+}
+.ifect .efectos-filas .title.e:hover{
+  background: white;
+}
+
+.ifect .efectos-filas .conten.e{
+  background:linear-gradient(white,#1e252594), url(/HONGOS/efectos/experiencias\ sensoriales.jpeg);
+  background-position: center;
+  background-size: cover;
+  color:rgb(5, 78, 5);
+}
+
+/*  */
+.ifect .efectos-filas .title.f{
+  background: linear-gradient(#23969683,#23969683),url(/HONGOS/efectos/alucinaciones.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+.ifect .efectos-filas .title.f:hover h2{
+  color: #186363cb;
+}
+.ifect .efectos-filas .title.f:hover{
+  background: white;
+}
+
+.ifect .efectos-filas .conten.f{
+  background: linear-gradient(#1c7575b6,#207474ad),url(/HONGOS/efectos/alucinaciones.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+
+/*  */
+.ifect .efectos-filas .title.g{
+  background: linear-gradient(#1e25259c,#1e25258f),url(/HONGOS/efectos/espirtual.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.ifect .efectos-filas .title.g:hover h2{
+  color: #1e2525;
+}
+.ifect .efectos-filas .title.g:hover{
+  background: white;
+}
+
+.ifect .efectos-filas .conten.g{
+  background: linear-gradient(#1e25259c,#1e25258f),url(/HONGOS/efectos/espirtual.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+/*  */
+.ifect .efectos-filas .title.h{
+  background:linear-gradient(#d4ac3e62,#d4ac3e62) ,url(/HONGOS/efectos/introspeccion.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.ifect .efectos-filas .title.h:hover h2{
+  color: rgb(143, 74, 28);
+}
+.ifect .efectos-filas .title.h:hover{
+  background: white;
+}
+
+.ifect .efectos-filas .conten.h{
+  background:linear-gradient(#92711562,#92711562) ,url(/HONGOS/efectos/introspeccion.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+/*  */
 .ifect .efectos-filas .conten{
   background-color: red;
   transform: translateY(0.1px);
-  width:300px;
+  display: flex;
+  align-items: center;
+  padding: 7px 7px;
+  width:500px;
   height:300px;
   cursor: pointer;
-  /* display: none; */
-  /* z-index: 1; */
   position: absolute;
 }
-.ifect .efectos-filas .conten:hover{
-  display: block;
+/*  */
+.ifect .redk{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  padding: 20px 20px;
 }
-
+.ifect .redk a{
+  color: rgba(255, 255, 255, 0.652);
+  text-decoration: none;
+  transition: 0.5s;
+}
+.ifect .redk a:hover{
+  font-size: 40px;
+}
 /* hibridos */
 .hibridos{
   display: flex;
@@ -621,8 +792,9 @@ color: white;
 }
 .tbls .tab .detek{
   width: 100%;
-  background-color: green; 
+  background-color: #e4e9e9bb; 
   display: flex;
+  border-radius: 50px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -637,30 +809,30 @@ color: white;
   background: rgba(255, 255, 255, 0.144);
   width: 900px;
   padding: 10px 10px;
-  border: 1px solid white;
+  border: 1px solid #1e2525;
   border-radius: 10px;
   list-style: none;
-  color: white;
+  color: #1e2525;
   cursor: pointer;
   margin-left: 170px;
+  margin: 9px;
   transition: 0.7s;
 }
 .tbls .tab summary:hover{
   border: 1px solid transparent;
   font-size: 23px;
-  background-color: white;
-  color: #1e2525;
+  background-color:rgb(79, 33, 207);
+  color: white;
 }
 .tbls .tab div{
-  background-color: red;
-  border-radius: 20px;
+  background-color: rgb(79, 33, 207);
   width: 700px;
-  margin: 9px;
+  color: white;
   display: flex;
   align-items: center;
   flex-direction: row;
   margin-left: 260px;
-  padding: 20px 20px;
+  padding: 10px 10px;
 }
 .tbls .tab .karact{
   display: grid;
@@ -668,15 +840,23 @@ color: white;
   grid-gap: 2px;
   justify-content: center;
   padding: none;
-  background-color: blue;
+  border: 1px solid #1e2525;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.281);
+  background-color: #ebf8f8;
 }
 .tbls .tab .karact .dscr{
-  width: 300px;
+  width: 400px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: none;
-  background-color: pink;
+  color: #1e2525;
+  background-color: #ebf8f8;
+}
+.tbls .tab .karact .dscr img{
+  width: 24px;
+  height:27px ;
+  margin-right: 9px;
 }
 .tbls .tab .karact .dscr p{
   text-align: left;
@@ -684,8 +864,8 @@ color: white;
 }
 .tbls .tab .imgen{
   width:407px;
-  height:154px ;
-  background: pink;
+  height:218px ;
+  border: 1px solid #1e2525;
   margin: 0;
 }
 /*  */
@@ -697,17 +877,20 @@ color: white;
 .tbls .tab .imgen.k2{
   background: url(/HONGOS/hibridos/semilanceata.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: 50% 30%;
+  width: 160px;
 }
 .tbls .tab .imgen.k3{
   background: url(/HONGOS/hibridos/mexicana.jpeg);
   background-size: cover;
-  background-position: 50% 20%;
+  background-position: center;
+  width: 150px;
 }
 .tbls .tab .imgen.k4{
   background: url(/HONGOS/hibridos/azurescens.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: 50% 30%;
+  width: 300px;
 }
 .tbls .tab .imgen.k5{
   background: url(/HONGOS/hibridos/Cyanescens.jpg);

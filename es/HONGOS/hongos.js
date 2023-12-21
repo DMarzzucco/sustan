@@ -38,3 +38,11 @@ titulos.forEach(function(titulo) {
         contenido.classList.remove='escala-up'
     });
 });
+// h & s
+function hideShow(){
+    var ifectSection= document.querySelector('.ifect');
+    // block
+    ifectSection.style.display ='block';
+    //redireccion
+    window.location.href = window.location.href.split('#')[0] + '#ifect';
+};
