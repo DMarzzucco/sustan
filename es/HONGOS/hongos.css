@@ -779,7 +779,7 @@ color: white;
 .tbls .tab{
   display: none;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -1035,6 +1035,40 @@ color: white;
 .cont-precau .titulos:hover{
   transform: translateX(-100px);
 }
+/*  */
+.cont-precau .titulos.b{
+  background: linear-gradient(#1e252588,#1e252588),url(/HONGOS/precauciones/dosificacion.jpeg);
+  background-size: cover;
+  background-position:center;
+}
+.cont-precau .titulos.c{
+  background: linear-gradient(#1e252588,#1e252588),url(/HONGOS/precauciones/setandsetting.jpeg);
+  background-size: cover;
+  background-position:center;
+}
+.cont-precau .titulos.d{
+  background: linear-gradient(#1e252588,#1e252588),url(/HONGOS/precauciones/estadoemocional.jpeg);
+  background-size: cover;
+  background-position:center;
+}
+.cont-precau .titulos.e{
+  background: linear-gradient(#1e252588,#1e252588),url(/HONGOS/precauciones/acompañamiento.jpeg);
+  background-size: cover;
+  background-position:center;
+}
+.cont-precau .titulos.f{
+  background: linear-gradient(#1e252588,#1e252588),url(/HONGOS/precauciones/alimentacion.jpeg);
+  background-size: cover;
+  background-position:center;
+}
+.cont-precau .titulos.g{
+  background: linear-gradient(#1e252588,#1e252588),url(/HONGOS/precauciones/preparacion.jpeg);
+  background-size: cover;
+  background-position:center;
+}
+
+
+/*  */
 .cont-precau .conten{
   width: 500px;
   height: 250px;
