@@ -87,11 +87,11 @@ html, body{
   color: blue;
   text-decoration: none;
 }
-.LSD-en-con .cabezal-LSD .titulo q{
+.LSD-en-con .cabezal-LSD .titulo .s{
   color:greenyellow;
   text-decoration: none;
 }
-.LSD-en-con .cabezal-LSD .titulo b{
+.LSD-en-con .cabezal-LSD .titulo .d{
   color:red;
   text-decoration: none;
 }
@@ -99,67 +99,98 @@ html, body{
 /* section  LSD-entrada*/
 .con-entrada-LSD{
   width: 100%;
-  height: 100%;
-  background: linear-gradient(#1e252571, #1e25253a), url(navLSD.jpeg);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#1e2525, #1e252588), url(navLSD.jpeg);
   background-size: cover;
+  background-position: center;
   color: white;
 }
 
-.con-entrada-LSD h1{
-  font-size: 50px;
-  padding: 10px 10px;
-}
 /* explicacion */
 .con-entrada-LSD .explicacion{
+  background: linear-gradient(rgba(255, 255, 255, 0.514), white),url(LSDQUes.jpg);
   padding: 20px 20px;
   font-size: 30px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 50px;
-  transition: 3s;
-  
+  display: flex;
+  height: auto;
+  justify-content: center;
+  align-items: center;  
+  color: #1e2525;
 }
-.con-entrada-LSD .explicacion img{
-  width: 520px;
-  height: 460px;
+.con-entrada-LSD .explicacion h1{
+  text-align: right;
+  font-size: 60px;
+  padding: 10px 10px;
 }
-
-/* origen */
-.con-entrada-LSD .origen{
-  padding: 20px 20px;
-  font-size: 30px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 30px;
+.con-entrada-LSD .explicacion .contexto{
+  width: 450px;
 }
-.con-entrada-LSD .origen .hoffmann img{
-  width: 520px;
-  height: 500px;
+.con-entrada-LSD .explicacion p{
+  font-size: 23px;
 }
-
-/* span */
-.con-entrada-LSD .span{
-  text-align: center;
-  padding: 20px 20px;
-}
-
 /* nav */
 .con-entrada-LSD .nav-cont{
+  width: 100%;
   text-align: center;
   padding: 20px 20px;
-  background: linear-gradient(#1e252513,#1e2525);
 }
 .con-entrada-LSD .nav-cont a{
   text-decoration: none;
   color: white;
   padding: 10px 10px;
   border-radius: 10px;
-  transition: 1s;
+  font-size: 24px;
+  transition: 0.7s;
 }
 .con-entrada-LSD .nav-cont a:hover{
   background-color: #B2FF4D;
+  font-size: 26px;
   color: #1e2525;
 }
+
+
+/* origen */
+.LSD{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px;
+  background: linear-gradient(#1e252598,#1e2525),url(NAvegr.jpg);
+  background-size: cover;
+  color: white;
+}
+.LSD .origen{
+  padding: 20px 20px;
+  font-size: 30px;
+  width: auto;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:linear-gradient(rgba(255, 255, 0, 0.356),yellow),url(hoffmann.jpg);
+  color: #1e2525;
+}
+.LSD  h1{
+  font-size: 100px;
+  padding: 10px 10px;
+}
+.LSD .origen .hoffmann img{
+  width: 520px;
+  height: 500px;
+}
+.LSD .origen .exp{
+  width: 500px;
+}
+.LSD p{
+  font-size: 20px;
+}
+
 
 /* CONSUMO */
 .consumo-con{

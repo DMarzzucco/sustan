@@ -9,16 +9,16 @@ function openTab(tabName){
 // precau
 var titulos = document.querySelectorAll('.titulos');
 
-// Itera sobre los elementos y agrega un event list a cada uno
+// Iterar
 titulos.forEach(function(titulo) {
-    // Obtén el número del título y del contenido
-    var num = titulo.id.replace('titulo', ''); // Extrae el número de id
+    //  numero del título - del contenido
+    var num = titulo.id.replace('titulo', ''); // número de id
 
-    // Agrega evento de clic al título
+    //  event  click
     titulo.addEventListener('click', function() {
         var contenido = document.getElementById('conten' + num);
         
-        // Agrega la clase de animación cuando se muestra el contenido
+        // animatk
         if (contenido.style.display === 'none' || contenido.style.display === '') {
             contenido.style.display = 'block';
             contenido.classList.add('escala-up');
@@ -27,10 +27,10 @@ titulos.forEach(function(titulo) {
         }
     });
     
-    // Agrega evento de clic al contenido para ocultarlo
+    // event hide
     var contenido = document.getElementById('conten' + num);
     contenido.addEventListener('click', function(event) {
-        // Evita que el clic en el contenido se propague al título
+        // none title
         event.stopPropagation();
 
         // Oculta el contenido
