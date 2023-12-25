@@ -329,11 +329,21 @@ color: white;
 }
 .tablas-h .tab{
   display: none;
-  margin-top: -500px;
+  margin-top: -980px;
+  position: static;
   width: 800px;
   height: 200px;
-  background: blue;
+  background: rgba(255, 255, 255, 0.733);
+  color: #1e2525;
   padding: 10px 10px;
+}
+
+.tablas-h .tab h3{
+  text-align: center;
+  font-size: 34px;
+}
+.tablas-h .tab p{
+  font-size: 23px;
 }
 .tablas-h .active{
   display: block;
@@ -344,13 +354,6 @@ color: white;
   align-items: center;
   padding: 10px 10px;
 }
-.tab.h2{
-  width: 800px;
-  height: 200px;
-  background: blue;
-  padding: 10px 10px;
-
-} 
 
 .scale-up-center {
   animation: scale-up-center 0.7s;
