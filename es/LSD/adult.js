@@ -9,3 +9,9 @@ function openTab(tabName){
     document.getElementById(tabName).classList.add('active', 'scale-up-center');   
 }
 
+// red
+function redireccionar (url){
+    if (url && url !== '#') {
+        window.location.href = url;
+    }
+}

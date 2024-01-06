@@ -1,3 +1,21 @@
+// respon
+let menuVisible = false;
+function showAndHideM (){
+    if (menuVisible){
+        document.getElementById("nav").classList="";
+        menuVisible=false;
+    }else{
+        document.getElementById("nav").classList="responsive";
+        menuVisible=true;
+    }
+}
+function selecionar(){
+    document.getElementById("nav").classList ="";
+    menuVisible=false;
+}
+
+
+// tab
 function openTab(tabName){
     var tablas=document.querySelectorAll('.tab');
     tablas.forEach(function(tab){
@@ -46,3 +64,9 @@ function hideShow(){
     //redireccion
     window.location.href = window.location.href.split('#')[0] + '#ifect';
 };
+//redir
+function redireccionar(url) {
+    if (url && url !== '#') {
+        window.location.href = url;
+    }
+}

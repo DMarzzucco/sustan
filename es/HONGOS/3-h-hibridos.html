@@ -1,61 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El Mundo de Droguincci</title>
     <link rel="stylesheet" href="hongos.css">
     <!-- en el caso que quieras tener tu propio documento css en la carpeta solo debes sacar el '/' -->
-    <link rel="shortcut icon" href="/fs/ico.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="/ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <linSk rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat+Alternates:wght@100&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat+Alternates:wght@100&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat+Alternates:wght@100&display=swap"
+            rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat+Alternates:wght@100&display=swap"
+            rel="stylesheet">
 </head>
-<body>
-<!-- main -->
-<header class="prueba-conNav">
-    <div class="logo">
-        <a href="/fs/presentacion.html">
-            <img src="/fs/nav.png" alt="">
-        </a>
-    </div>
-    <div class="nav">
-        <!-- en los enlaces poner los de la carpeta -->
-        <a href="1-h-consumo.html">Consumo</a>
-        <a href="2-h-efectos.html">Efectos</a>
-        <a href="3-h-hibridos.html">Hibridos</a>
-        <a href="4-h-precauciones.html">Precauciones</a>
-        <a href="5-h-concecuencias.html">Consecuencias</a>
-    </div>
-</header>
 
-<!-- section -->
-<section class="hibridos">
-    <div class="p">
-        <h1>H Í B R I D O S</h1>
-        <p>
-            Los hongos mágicos, siendo organismos naturalmente diversos, han dado lugar a diferentes cepas e híbridos a lo largo del tiempo. Posterior  a esto les daremos información sobre los híbridos más conocidos y estudiados, junto a sus características distintivas.
-        </p>
-    </div>
-</section>
-<!--  -->
-<section class="hbrd">
+<body>
+    <!-- main -->
+    <header class="prueba-conNav">
+        <div class="logo">
+            <a href="/presentacion.html">
+                <img src="/nav.png" alt="">
+            </a>
+        </div>
+        <nav id="nav">
+            <ul class="nav-list">
+                <li> <a href="1-h-consumo.html">Consumo</a>
+                </li>
+                <li> <a href="2-h-efectos.html">Efectos</a>
+                </li>
+                <li> <a href="3-h-hibridos.html">Hibridos</a>
+                </li>
+                <li> <a href="4-h-precauciones.html">Precauciones</a>
+                </li>
+                <li><a href="5-h-concecuencias.html">Consecuencias</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!--  -->
+        <div class="nav-responsive" onclick="showAndHideM()">
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+    </header>
+
+    <!-- section -->
+    <section class="hibridos">
+        <div class="p">
+            <h1>H Í B R I D O S</h1>
+            <p>
+                Los hongos mágicos, siendo organismos naturalmente diversos, han dado lugar a diferentes cepas e
+                híbridos a lo largo del tiempo. Posterior a esto les daremos información sobre los híbridos más
+                conocidos y estudiados, junto a sus características distintivas.
+            </p>
+        </div>
+    </section>
+    <!--  -->
+    <section class="hbrd">
         <h1>A C L A R A C I Ó N</h1>
         <div>
             <p>
-                Antes de adentrarnos a la descripción de los diferentes tipos de híbridos que existen, hay que aclarar algo. Lo que se va a mostrar a continuación son hongos perteneciente a la familia de las psilocibinas. Existen diversos tipos de hongos en la naturaleza, no todos tienen efectos psicoactivos, como tampoco, no todos son comestibles. 
+                Antes de adentrarnos a la descripción de los diferentes tipos de híbridos que existen, hay que aclarar
+                algo. Lo que se va a mostrar a continuación son hongos perteneciente a la familia de las psilocibinas.
+                Existen diversos tipos de hongos en la naturaleza, no todos tienen efectos psicoactivos, como tampoco,
+                no todos son comestibles.
             </p>
         </div>
-</section>
-<!--  -->
-<section class="tbls">
+    </section>
+    <!--  -->
+    <section class="tbls">
 
         <div class="botones">
             <button class="botones-n" onclick="openTab('tab1')">Cubensis</button>
@@ -67,233 +89,271 @@
 
         <!-- <div class="tablas"> -->
 
-            <div class="tab active" id="tab1">
-                
-                <h2>P S I L O C Y B E <br> C U B E N S I S</h2>
+        <div class="tab active" id="tab1">
 
-                <div class="detek">
-                    <details>
-                        <summary>Características</summary>
-                        <div>
-                            <p>
-                                Este híbrido es uno de los híbridos más comunes y estudiados. Tiene un sombrero amplio  y un color que varía desde el beige hasta el marrón. La esporada suele ser de color morado oscuro a negro.
-                            </p>                                          
-                        </div>
-                        <!--  -->
-                        <div class="karact">
+            <h2>P S I L O C Y B E <br> C U B E N S I S</h2>
 
-                            <div class="dscr">
-                              <p><img src="/HONGOS/descriciones/Himenio.png" alt="">Himenio: con láminas</p>
-                              <p><img src="/HONGOS/descriciones/convexo.png" alt=""><img src="/HONGOS/descriciones/aplanado.png" alt="">Sombrero:convexo o aplanado</p>
-                              <p><img src="/HONGOS/descriciones/Adnate.png" alt=""><img src="/HONGOS/descriciones/Adnexed.png" alt="">Láminas:adnatas o ventrudas</p>
-                              <p><img src="/HONGOS/descriciones/pie-anillo.png" alt="">Pie:con anillo</p>
-                              <p><img src="/HONGOS/descriciones/purpura.png" alt="">Esporas de Color: púrpura</p>
-                              <p><img src="/HONGOS/descriciones/ecologia.png" alt="">Ecología: Saprofítica</p>
-                              <p><img src="/HONGOS/descriciones/Comestibilidad.png" alt="">Comestibilidad: Psicotrópica</p>
-                            </div>
+            <div class="detek">
+                <details>
+                    <summary>Características</summary>
+                    <div>
+                        <p>
+                            Este híbrido es uno de los híbridos más comunes y estudiados. Tiene un sombrero amplio y un
+                            color que varía desde el beige hasta el marrón. La esporada suele ser de color morado oscuro
+                            a negro.
+                        </p>
+                    </div>
+                    <!--  -->
+                    <div class="karact">
 
-                            <div class="imgen k1"></div>
-                          
-                        </div>
-
-                    </details>
-                    <details>
-                        <summary>Efectos Típicos</summary>
-                        <div>
-                            <p>
-                                El Cubensis es conocido por producir efectos psicodélicos moderados a fuertes, con una duración que generalmente oscila entre 4 y 8 horas. 
-                                Las personas a menudo experimentan cambios en la percepción visual, euforia y conexiones emocionales intensificadas. 
+                        <div class="dscr">
+                            <p><img src="/HONGOS/descriciones/Himenio.png" alt="">Himenio: con láminas</p>
+                            <p><img src="/HONGOS/descriciones/convexo.png" alt=""><img
+                                    src="/HONGOS/descriciones/aplanado.png" alt="">Sombrero:convexo o aplanado</p>
+                            <p><img src="/HONGOS/descriciones/Adnate.png" alt=""><img
+                                    src="/HONGOS/descriciones/Adnexed.png" alt="">Láminas:adnatas o ventrudas</p>
+                            <p><img src="/HONGOS/descriciones/pie-anillo.png" alt="">Pie:con anillo</p>
+                            <p><img src="/HONGOS/descriciones/purpura.png" alt="">Esporas de Color: púrpura</p>
+                            <p><img src="/HONGOS/descriciones/ecologia.png" alt="">Ecología: Saprofítica</p>
+                            <p><img src="/HONGOS/descriciones/Comestibilidad.png" alt="">Comestibilidad: Psicotrópica
                             </p>
                         </div>
-                    </details>    
-                </div>
 
+                        <div class="imgen k1"></div>
+
+                    </div>
+
+                </details>
+                <details>
+                    <summary>Efectos Típicos</summary>
+                    <div>
+                        <p>
+                            El Cubensis es conocido por producir efectos psicodélicos moderados a fuertes, con una
+                            duración que generalmente oscila entre 4 y 8 horas.
+                            Las personas a menudo experimentan cambios en la percepción visual, euforia y conexiones
+                            emocionales intensificadas.
+                        </p>
+                    </div>
+                </details>
             </div>
 
-            <div class="tab" id="tab2">
+        </div>
 
-                <h2>P S I L O C Y B E <br>S E M I L A N C E A T A</h2>
+        <div class="tab" id="tab2">
 
-                <div class="detek">
-                    <details>
-                        <summary>Características</summary>
-                        <div>
-                            <p>
-                                La Semilanceta, tambien conocida como la seta de sombrero  puntiagudo, tiene un sombrero conico y delgado, con un color que va desde el amarillo paldio hasta el marron oscuro. Es más pequeño en tamaño en comparación con otras especies.
+            <h2>P S I L O C Y B E <br>S E M I L A N C E A T A</h2>
+
+            <div class="detek">
+                <details>
+                    <summary>Características</summary>
+                    <div>
+                        <p>
+                            La Semilanceta, tambien conocida como la seta de sombrero puntiagudo, tiene un sombrero
+                            conico y delgado, con un color que va desde el amarillo paldio hasta el marron oscuro. Es
+                            más pequeño en tamaño en comparación con otras especies.
+                        </p>
+                    </div>
+                    <div class="karact">
+
+                        <div class="dscr">
+                            <p><img src="/HONGOS/descriciones/Himenio.png" alt="">Himenio: con láminas</p>
+                            <p><img src="/HONGOS/descriciones/conico.png" alt="">Sombrero: cónico</p>
+                            <p><img src="/HONGOS/descriciones/Adnate.png" alt="">Láminas: adnatas</p>
+                            <p><img src="/HONGOS/descriciones/pie-desnudo.png" alt="">Pie: delgado y largo</p>
+                            <p><img src="/HONGOS/descriciones/purpura.png" alt=""><img
+                                    src="/HONGOS/descriciones/marron.png" alt="">Esporas de Color: marrón-púrpura</p>
+                            <p><img src="/HONGOS/descriciones/ecologia.png" alt="">Ecología: Saprofítica</p>
+                            <p><img src="/HONGOS/descriciones/Comestibilidad.png" alt="">Comestibilidad: Psicotrópica
                             </p>
                         </div>
-                        <div class="karact">
 
-                            <div class="dscr">
-                              <p><img src="/HONGOS/descriciones/Himenio.png" alt="">Himenio: con láminas</p>
-                              <p><img src="/HONGOS/descriciones/conico.png" alt="">Sombrero: cónico</p>
-                              <p><img src="/HONGOS/descriciones/Adnate.png" alt="">Láminas: adnatas</p>
-                              <p><img src="/HONGOS/descriciones/pie-desnudo.png" alt="">Pie: delgado y largo</p>
-                              <p><img src="/HONGOS/descriciones/purpura.png" alt=""><img src="/HONGOS/descriciones/marron.png" alt="">Esporas de Color: marrón-púrpura</p>
-                              <p><img src="/HONGOS/descriciones/ecologia.png" alt="">Ecología: Saprofítica</p>
-                              <p><img src="/HONGOS/descriciones/Comestibilidad.png" alt="">Comestibilidad: Psicotrópica</p>
-                            </div>
+                        <div class="imgen k2"></div>
 
-                            <div class="imgen k2"></div>
-                          
-                        </div>
-                          
-                    </details>
-                    <details>
-                        <summary>Efectos Típicos</summary>
-                        <div>
-                            <p>
-                                Este híbrido es admirado por su potencia, a menudo produciendo efectos intensos con alucinaciones visuales más pronunciadas. La duración del viaje puede ser más corta que en con otras especies, alrededor de 3 a 5 horas. 
-                            </p>
-                        </div>
-                    </details>    
-                </div>
+                    </div>
 
+                </details>
+                <details>
+                    <summary>Efectos Típicos</summary>
+                    <div>
+                        <p>
+                            Este híbrido es admirado por su potencia, a menudo produciendo efectos intensos con
+                            alucinaciones visuales más pronunciadas. La duración del viaje puede ser más corta que en
+                            con otras especies, alrededor de 3 a 5 horas.
+                        </p>
+                    </div>
+                </details>
             </div>
-            <div class="tab" id="tab3">
 
-                <h2>P S I L O C Y B E<br>M E X I C A N A</h2>
+        </div>
+        <div class="tab" id="tab3">
 
-                <div class="detek">
-                    <details>
-                        <summary>Características</summary>
-                        <div>
-                            <p>
-                                Como su mismo nombre lo indica, esta especie es originaria de México. Se presenta con un sombrero cónico y un color que va desde el blanco hasta el beige claro. Es conocido por su conexión en rituales chamánicos. 
+            <h2>P S I L O C Y B E<br>M E X I C A N A</h2>
+
+            <div class="detek">
+                <details>
+                    <summary>Características</summary>
+                    <div>
+                        <p>
+                            Como su mismo nombre lo indica, esta especie es originaria de México. Se presenta con un
+                            sombrero cónico y un color que va desde el blanco hasta el beige claro. Es conocido por su
+                            conexión en rituales chamánicos.
+                        </p>
+                    </div>
+                    <div class="karact">
+
+                        <div class="dscr">
+                            <p><img src="/HONGOS/descriciones/Himenio.png" alt="">Himenio: con láminas</p>
+                            <p><img src="/HONGOS/descriciones/conico.png" alt=""><img
+                                    src="/HONGOS/descriciones/mamelonado.png" alt="">Sombrero: cónico o mamelonado</p>
+                            <p><img src="/HONGOS/descriciones/Adnate.png" alt="">Láminas: adnatas</p>
+                            <p><img src="/HONGOS/descriciones/pie-desnudo.png" alt="">Pie: desnudo</p>
+                            <p><img src="/HONGOS/descriciones/marron.png" alt="">Esporas de Color: marrón-púrpura</p>
+                            <p><img src="/HONGOS/descriciones/ecologia.png" alt="">Ecología: Saprofítica</p>
+                            <p><img src="/HONGOS/descriciones/Comestibilidad.png" alt="">Comestibilidad: Psicotrópica
                             </p>
                         </div>
-                        <div class="karact">
+                        <div class="imgen k3"></div>
 
-                            <div class="dscr">
-                              <p><img src="/HONGOS/descriciones/Himenio.png" alt="">Himenio: con láminas</p>
-                              <p><img src="/HONGOS/descriciones/conico.png" alt=""><img src="/HONGOS/descriciones/mamelonado.png" alt="">Sombrero: cónico o mamelonado</p>
-                              <p><img src="/HONGOS/descriciones/Adnate.png" alt="">Láminas: adnatas</p>
-                              <p><img src="/HONGOS/descriciones/pie-desnudo.png" alt="">Pie: desnudo</p>
-                              <p><img src="/HONGOS/descriciones/marron.png" alt="">Esporas de Color: marrón-púrpura</p>
-                              <p><img src="/HONGOS/descriciones/ecologia.png" alt="">Ecología: Saprofítica</p>
-                              <p><img src="/HONGOS/descriciones/Comestibilidad.png" alt="">Comestibilidad: Psicotrópica</p>
-                            </div>
-                            <div class="imgen k3"></div>
-                          
-                        </div>
-                          
-                    </details>
-                    <details>
-                        <summary>Efectos Típicos</summary>
-                        <div>
-                            <p>
-                                Este híbrido mexicano puede producir efectos psicodélicos moderados, con experiencias visuales y mentales. Los efectos suelen durar alrededor de 4 a 6 horas, con un inicio más rápido que algunas otras cepas. 
-                            </p>
-                        </div>
-                    </details>    
-                </div>
+                    </div>
 
+                </details>
+                <details>
+                    <summary>Efectos Típicos</summary>
+                    <div>
+                        <p>
+                            Este híbrido mexicano puede producir efectos psicodélicos moderados, con experiencias
+                            visuales y mentales. Los efectos suelen durar alrededor de 4 a 6 horas, con un inicio más
+                            rápido que algunas otras cepas.
+                        </p>
+                    </div>
+                </details>
             </div>
-            <div class="tab" id="tab4">
 
-                <h2>P S I L O C Y B E<br>A Z U R E S C E N S</h2>
+        </div>
+        <div class="tab" id="tab4">
 
-                <div class="detek">
-                    <details>
-                        <summary>Características</summary>
-                        <div>
-                            <p>
-                                Esta cepa se encuentra en la naturaleza, especialmente en la costa oeste de los Estados Unidos. Tiene un sombrero más ancho y un color que puede variar desde el blanco hasta el marrón claro. 
+            <h2>P S I L O C Y B E<br>A Z U R E S C E N S</h2>
+
+            <div class="detek">
+                <details>
+                    <summary>Características</summary>
+                    <div>
+                        <p>
+                            Esta cepa se encuentra en la naturaleza, especialmente en la costa oeste de los Estados
+                            Unidos. Tiene un sombrero más ancho y un color que puede variar desde el blanco hasta el
+                            marrón claro.
+                        </p>
+                    </div>
+                    <div class="karact">
+
+                        <div class="dscr">
+                            <p><img src="/HONGOS/descriciones/Himenio.png" alt="">Himenio: con láminas</p>
+                            <p><img src="/HONGOS/descriciones/convexo.png" alt=""><img
+                                    src="/HONGOS/descriciones/mamelonado.png" alt="">Sombrero: convexo o mamelonado</p>
+                            <p><img src="/HONGOS/descriciones/Adnate.png" alt=""><img
+                                    src="/HONGOS/descriciones/Sinuate.png" alt="">Láminas: adnatas o sinuosas</p>
+                            <p><img src="/HONGOS/descriciones/pie-desnudo.png" alt="">Pie: desnudo</p>
+                            <p><img src="/HONGOS/descriciones/marron.png" alt=""><img
+                                    src="/HONGOS/descriciones/purpura.png" alt="">Esporas de Color: castaño o púrpura
+                            </p>
+                            <p><img src="/HONGOS/descriciones/ecologia.png" alt="">Ecología: Saprofítica</p>
+                            <p><img src="/HONGOS/descriciones/Comestibilidad.png" alt="">Comestibilidad: Psicotrópica
                             </p>
                         </div>
-                        <div class="karact">
+                        <div class="imgen k4"></div>
 
-                            <div class="dscr">
-                              <p><img src="/HONGOS/descriciones/Himenio.png" alt="">Himenio: con láminas</p>
-                              <p><img src="/HONGOS/descriciones/convexo.png" alt=""><img src="/HONGOS/descriciones/mamelonado.png" alt="">Sombrero: convexo o mamelonado</p>
-                              <p><img src="/HONGOS/descriciones/Adnate.png" alt=""><img src="/HONGOS/descriciones/Sinuate.png" alt="">Láminas: adnatas o sinuosas</p>
-                              <p><img src="/HONGOS/descriciones/pie-desnudo.png" alt="">Pie: desnudo</p>
-                              <p><img src="/HONGOS/descriciones/marron.png" alt=""><img src="/HONGOS/descriciones/purpura.png" alt="">Esporas de Color: castaño o púrpura</p>
-                              <p><img src="/HONGOS/descriciones/ecologia.png" alt="">Ecología: Saprofítica</p>
-                              <p><img src="/HONGOS/descriciones/Comestibilidad.png" alt="">Comestibilidad: Psicotrópica</p>
-                            </div>
-                            <div class="imgen k4"></div>
+                    </div>
 
-                        </div>
-                          
-                    </details>
-                    <details>
-                        <summary>Efectos Típicos</summary>
-                        <div>
-                            <p>
-                                Esta especie tiene la fama de ser la cepa más potente en lo que respecta a los hongos mágicos. Los efectos son similares a otras cepas, pero con una intensidad notablemente mayor. La duración puede extenderse a 6 horas e incluso más. 
-                            </p>
-                        </div>
-                    </details>    
-                </div>
-
+                </details>
+                <details>
+                    <summary>Efectos Típicos</summary>
+                    <div>
+                        <p>
+                            Esta especie tiene la fama de ser la cepa más potente en lo que respecta a los hongos
+                            mágicos. Los efectos son similares a otras cepas, pero con una intensidad notablemente
+                            mayor. La duración puede extenderse a 6 horas e incluso más.
+                        </p>
+                    </div>
+                </details>
             </div>
-            <div class="tab" id="tab5">
 
-                <h2>P S I L O C Y B E<br>C Y A N E S C E N S</h2>
+        </div>
+        <div class="tab" id="tab5">
 
-                <div class="detek">
-                    <details>
-                        <summary>Características</summary>
-                        <div>
-                            <p>
-                                La Cyanescens, también conocida como el famoso “Wavy Caps” (gorra ondulada), este apodo se debe a los bordes ondulados de su sombrero. Este hongo tiene un color que va desde el blanco hasta el marrón claro. 
-                            </p>                              
-                        </div>
-                        <div class="karact">
+            <h2>P S I L O C Y B E<br>C Y A N E S C E N S</h2>
 
-                            <div class="dscr">
-                              <p><img src="/HONGOS/descriciones/Himenio.png" alt="">Himenio: con láminas</p>
-                              <p><img src="/HONGOS/descriciones/aplanado.png" alt="">Sombrero: aplanado</p>
-                              <p><img src="/HONGOS/descriciones/Adnate.png" alt=""><img src="/HONGOS/descriciones/Subdecurrent.png" alt="">Láminas: adnatas o subdecurrentes</p>
-                              <p><img src="/HONGOS/descriciones/pie-desnudo.png" alt="">Pie:desnudo</p>
-                              <p><img src="/HONGOS/descriciones/marron.png" alt=""><img src="/HONGOS/descriciones/purpura.png" alt="">Esporas de Color: castaño o púrpura</p>
-                              <p><img src="/HONGOS/descriciones/ecologia.png" alt="">Ecología: Saprofítica</p>
-                              <p><img src="/HONGOS/descriciones/Comestibilidad.png" alt="">Comestibilidad: Psicotrópica</p>
-                            </div>
-                            <div class="imgen k5"></div>
-                          
-                        </div>
-                    </details>
-                    <details>
-                        <summary>Efectos Típicos</summary>
-                        <div>
-                            <p>
-                                Los wavy caps, pueden generar efectos que se asemejan a la de otras cepas, pero con una intensidad considerable. SI ha ganado la reputación de tener un inicio más rápido y con una duración prolongada, la cual a veces puede llegar a superar las 6 horas.  
+            <div class="detek">
+                <details>
+                    <summary>Características</summary>
+                    <div>
+                        <p>
+                            La Cyanescens, también conocida como el famoso “Wavy Caps” (gorra ondulada), este apodo se
+                            debe a los bordes ondulados de su sombrero. Este hongo tiene un color que va desde el blanco
+                            hasta el marrón claro.
+                        </p>
+                    </div>
+                    <div class="karact">
+
+                        <div class="dscr">
+                            <p><img src="/HONGOS/descriciones/Himenio.png" alt="">Himenio: con láminas</p>
+                            <p><img src="/HONGOS/descriciones/aplanado.png" alt="">Sombrero: aplanado</p>
+                            <p><img src="/HONGOS/descriciones/Adnate.png" alt=""><img
+                                    src="/HONGOS/descriciones/Subdecurrent.png" alt="">Láminas: adnatas o subdecurrentes
+                            </p>
+                            <p><img src="/HONGOS/descriciones/pie-desnudo.png" alt="">Pie:desnudo</p>
+                            <p><img src="/HONGOS/descriciones/marron.png" alt=""><img
+                                    src="/HONGOS/descriciones/purpura.png" alt="">Esporas de Color: castaño o púrpura
+                            </p>
+                            <p><img src="/HONGOS/descriciones/ecologia.png" alt="">Ecología: Saprofítica</p>
+                            <p><img src="/HONGOS/descriciones/Comestibilidad.png" alt="">Comestibilidad: Psicotrópica
                             </p>
                         </div>
-                    </details>    
-                </div>
+                        <div class="imgen k5"></div>
 
+                    </div>
+                </details>
+                <details>
+                    <summary>Efectos Típicos</summary>
+                    <div>
+                        <p>
+                            Los wavy caps, pueden generar efectos que se asemejan a la de otras cepas, pero con una
+                            intensidad considerable. SI ha ganado la reputación de tener un inicio más rápido y con una
+                            duración prolongada, la cual a veces puede llegar a superar las 6 horas.
+                        </p>
+                    </div>
+                </details>
             </div>
+
+        </div>
 
         <!-- </div> -->
-</section>
+    </section>
 
-<!-- footer -->
+    <!-- footer -->
     <footer>
 
-    <!-- enlaces -->
+        <!-- enlaces -->
         <div class="enlaces">
-                <div class="filas">
-                   <a href="#" onclick="redireccionar()">Source</a>
-                   <a href="#">||</a>
-                   <a href="#" onclick="redireccionar()">Mazzei</a>
-                   <a href="#">||</a>
-                   <a href="#" onclick="redireccionar()">SysteMarzz</a>
-                   <a href="#">||</a>
-                   <a href="/fs/formulario.html">Contactanos</a>
-                </div>
+            <div class="filas">
+                <a href="#" onclick="redireccionar('https://github.com/DMarzzucco/fasin.git')">Source</a>
+                <a href="#">||</a>
+                <a href="#" onclick="redireccionar('https://www.linkedin.com/in/franco-mazzei-813763267/')">Mazzei</a>
+                <a href="#">||</a>
+                <a href="#" onclick="redireccionar('https://systemarzz77.000webhostapp.com/')">SysteMarzz</a>
+                <a href="#">||</a>
+                <a href="/formulario.html">Contactanos</a>
             </div>
+        </div>
 
         <!-- derechode autor -->
         <div class="copia-deauto">
             <small>&copy;2023 <b>Mazzei & SysteMarzz</b> - Todos los Derechos Reservados.</small>
         </div>
     </footer>
-        <!-- en el caso que quieras tener tu propio documento js en la carpeta solo debes sacar el '/' -->
+    <!-- en el caso que quieras tener tu propio documento js en la carpeta solo debes sacar el '/' -->
     <script src="hongos.js"></script>
     </section>
 
 </body>
+
 </html>

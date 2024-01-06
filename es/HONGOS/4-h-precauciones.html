@@ -1,172 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El Mundo de Droguincci</title>
     <link rel="stylesheet" href="hongos.css">
     <!-- en el caso que quieras tener tu propio documento css en la carpeta solo debes sacar el '/' -->
-    <link rel="shortcut icon" href="/fs/ico.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="/ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <linSk rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat+Alternates:wght@100&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat+Alternates:wght@100&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat+Alternates:wght@100&display=swap"
+            rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat+Alternates:wght@100&display=swap"
+            rel="stylesheet">
 </head>
+
 <body>
-<!-- main -->
-<header class="prueba-conNav">
-    <div class="logo">
-        <a href="/fs/presentacion.html">
-            <img src="/fs/nav.png" alt="">
-        </a>
-    </div>
-    <div class="nav">
-        <!-- en los enlaces poner los de la carpeta -->
-        <a href="1-h-consumo.html">Consumo</a>
-        <a href="2-h-efectos.html">Efectos</a>
-        <a href="3-h-hibridos.html">Hibridos</a>
-        <a href="4-h-precauciones.html">Precauciones</a>
-        <a href="5-h-concecuencias.html">Consecuencias</a>
-    </div>
-</header>
+    <!-- main -->
+    <header class="prueba-conNav">
+        <div class="logo">
+            <a href="/presentacion.html">
+                <img src="/nav.png" alt="">
+            </a>
+        </div>
+        <nav id="nav">
+            <ul class="nav-list">
+                <li> <a href="1-h-consumo.html">Consumo</a>
+                </li>
+                <li> <a href="2-h-efectos.html">Efectos</a>
+                </li>
+                <li> <a href="3-h-hibridos.html">Hibridos</a>
+                </li>
+                <li> <a href="4-h-precauciones.html">Precauciones</a>
+                </li>
+                <li><a href="5-h-concecuencias.html">Consecuencias</a>
+                </li>
+            </ul>
+        </nav>
 
-<!-- section -->
-<section class="precauciones">
-    <div class="p">
-        <h1>P R E C A U C I O N E S</h1>
-        <p>
-            El consumo de hongos mágicos puede ser una experiencia profundamente transformadora, pero solo cuando se aborda con respeto y precaución. La preparación meticulosa y la consideración de la seguridad son fundamentales para maximizar los beneficios potenciales y minimizar los riesgos asociados con estas sustancias psicodélicas. Por esto mismo antes de echarse en este viaje, es esencial tomar una serie de precauciones para garantizar una experiencia segura como beneficiosa. 
-        </p>
-    </div>
-</section>
-<!--  -->
-<section class="precau-inf">
+        <!--  -->
+        <div class="nav-responsive" onclick="showAndHideM()">
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+    </header>
 
-    <div class="inf-prec">
-        <h2>I N V E S T I G A C I Ó N<br>&<br>E D U C A C I Ó N</h2>
-        <div>
+    <!-- section -->
+    <section class="precauciones">
+        <div class="p">
+            <h1>P R E C A U C I O N E S</h1>
             <p>
-                Creo que es innecesario decirlo,  pero a su vez es algo primordial. Pero bueno.. Lo lógico sería que ya hayas leído sobre qué son los hongos mágicos y cuales son sus efectos, dependiendo del tipo de cepa. El hecho de que se haga mención a esto es porque una de las precauciones a tomar es tener al menos una idea de lo que vas a consumir. Ya que comprender la psilocibina, sus propiedades y cómo interactúa con tu cuerpo puede proporcionar una base bastante sólida. <br>
-                Si aún no han visitado las otras secciones. Les invitamos a que lo hagan antes de continuar con esto, dándole aquí (<a href="1-h-consumo.html">Consumo</a>,<a href="2-h-efectos.html">Efectos</a>,<a href="3-h-hibridos.html">Hibridos</a>). 
+                El consumo de hongos mágicos puede ser una experiencia profundamente transformadora, pero solo cuando se
+                aborda con respeto y precaución. La preparación meticulosa y la consideración de la seguridad son
+                fundamentales para maximizar los beneficios potenciales y minimizar los riesgos asociados con estas
+                sustancias psicodélicas. Por esto mismo antes de echarse en este viaje, es esencial tomar una serie de
+                precauciones para garantizar una experiencia segura como beneficiosa.
             </p>
         </div>
-    </div>
+    </section>
+    <!--  -->
+    <section class="precau-inf">
 
-</section>
-<!--  -->
-<section class="cont-precau">
-    <div class="intr">
-        <h1>P R E C A U C I O N E S</h1>
-    </div>
-    <div class="grid-prec">
-        <div class="ke">
-            <div class="titulos b" id="titulo1">
-                <h2>D O S I F I C A C I Ó N<br>P R E C I S A</h2>
-            </div>
-            <div class="conten b" id="conten1">
+        <div class="inf-prec">
+            <h2>I N V E S T I G A C I Ó N<br>&<br>E D U C A C I Ó N</h2>
+            <div>
                 <p>
-                    Esto es fundamental. Comenzar con una dosis baja es sumamente recomendable, ya que la sensibilidad individual puede variar. Medir con precisión la cantidad de hongos a consumir ayuda a evitar experiencias abrumadoras. 
-                    Lo ideal antes de consumir es consumir una dosis en base a tus características físicas, o sea, altura y peso. 
-                </p>
-            </div>
-    
-        </div>
-    
-        <div class="ke">
-            <div class="titulos c" id="titulo2">
-                <h2>S E T<br>A N D<br>S E T T I N G</h2>
-            </div>
-            <div class="conten c" id="conten2" >
-                <p>
-                    El entorno en el se consume esta sustancia es de suma importancia. El término conocido como “Set and Setting” (una forma de decir ponerse en ambiente), consiste en escoger un lugar tranquilo y familiar, con personas de confianza,  ya que esto puede contribuir en una experiencia más positiva. 
-                    Es de aclarar que es esencial evitar situaciones estresantes o desconocidas ya que puede generar  experiencias para nada agradables. 
-                </p>
-            </div>
-    
-        </div>
-    
-        <div class="ke">
-            <div class="titulos d" id="titulo3">
-                <h2>E S T A D O - M E N T A L <br>&<br>E M O C I O N A L</h2>
-            </div>
-            <div class="conten d" id="conten3">
-                <p>
-                    El estado mental y emocional de una persona es determinante a la hora de consumir. No es recomendable consumir hongos si la personas está pasando por momentos de estrés, ansiedad o depresión, y creo que no hace falta aclarar que si el individuo en cuestión  padece de un trastorno psicótico, tiene prohibido tener contacto con algún tipo de sustancias psicoactivas. La psilocibina puede intensificar las emociones y los trastornos mentales (si es que la persona padece de alguno). Por lo que diciendo esto tener un estado mental y positivo es crucial antes de adentrarse a este mundo. 
+                    Creo que es innecesario decirlo, pero a su vez es algo primordial. Pero bueno.. Lo lógico sería que
+                    ya hayas leído sobre qué son los hongos mágicos y cuales son sus efectos, dependiendo del tipo de
+                    cepa. El hecho de que se haga mención a esto es porque una de las precauciones a tomar es tener al
+                    menos una idea de lo que vas a consumir. Ya que comprender la psilocibina, sus propiedades y cómo
+                    interactúa con tu cuerpo puede proporcionar una base bastante sólida. <br>
+                    Si aún no han visitado las otras secciones. Les invitamos a que lo hagan antes de continuar con
+                    esto, dándole aquí (<a href="1-h-consumo.html">Consumo</a>,<a href="2-h-efectos.html">Efectos</a>,<a
+                        href="3-h-hibridos.html">Hibridos</a>).
                 </p>
             </div>
         </div>
-    
-        <div class="ke">
-            <div class="titulos e" id="titulo4">
-                <h2>A C O M P A Ñ A M I E N T O</h2>
+
+    </section>
+    <!--  -->
+    <section class="cont-precau">
+        <div class="intr">
+            <h1>P R E C A U C I O N E S</h1>
+        </div>
+        <div class="grid-prec">
+            <div class="ke">
+                <div class="titulos b" id="titulo1">
+                    <h2>D O S I F I C A C I Ó N<br>P R E C I S A</h2>
+                </div>
+                <div class="conten b" id="conten1">
+                    <p>
+                        Esto es fundamental. Comenzar con una dosis baja es sumamente recomendable, ya que la
+                        sensibilidad individual puede variar. Medir con precisión la cantidad de hongos a consumir ayuda
+                        a evitar experiencias abrumadoras.
+                        Lo ideal antes de consumir es consumir una dosis en base a tus características físicas, o sea,
+                        altura y peso.
+                    </p>
+                </div>
+
             </div>
-            <div class="conten e" id="conten4">
-                <p>
-                    Como se ha hecho mención en el “Set and Setting”, la compañía de alguien de confianza es muy recomendable, ya que esta persona puede brindar apoyo emocional y físico en el caso que surjan dificultades durante el viaje.
-                    También vale aclarar que es recomendable que esa persona de confianza esté en un estado sobrio y que a su vez esté informado sobre qué son los hongos mágicos.
-                </p>
+
+            <div class="ke">
+                <div class="titulos c" id="titulo2">
+                    <h2>S E T<br>A N D<br>S E T T I N G</h2>
+                </div>
+                <div class="conten c" id="conten2">
+                    <p>
+                        El entorno en el se consume esta sustancia es de suma importancia. El término conocido como “Set
+                        and Setting” (una forma de decir ponerse en ambiente), consiste en escoger un lugar tranquilo y
+                        familiar, con personas de confianza, ya que esto puede contribuir en una experiencia más
+                        positiva.
+                        Es de aclarar que es esencial evitar situaciones estresantes o desconocidas ya que puede generar
+                        experiencias para nada agradables.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="ke">
+                <div class="titulos d" id="titulo3">
+                    <h2>E S T A D O - M E N T A L <br>&<br>E M O C I O N A L</h2>
+                </div>
+                <div class="conten d" id="conten3">
+                    <p>
+                        El estado mental y emocional de una persona es determinante a la hora de consumir. No es
+                        recomendable consumir hongos si la personas está pasando por momentos de estrés, ansiedad o
+                        depresión, y creo que no hace falta aclarar que si el individuo en cuestión padece de un
+                        trastorno psicótico, tiene prohibido tener contacto con algún tipo de sustancias psicoactivas.
+                        La psilocibina puede intensificar las emociones y los trastornos mentales (si es que la persona
+                        padece de alguno). Por lo que diciendo esto tener un estado mental y positivo es crucial antes
+                        de adentrarse a este mundo.
+                    </p>
+                </div>
+            </div>
+
+            <div class="ke">
+                <div class="titulos e" id="titulo4">
+                    <h2>A C O M P A Ñ A M I E N T O</h2>
+                </div>
+                <div class="conten e" id="conten4">
+                    <p>
+                        Como se ha hecho mención en el “Set and Setting”, la compañía de alguien de confianza es muy
+                        recomendable, ya que esta persona puede brindar apoyo emocional y físico en el caso que surjan
+                        dificultades durante el viaje.
+                        También vale aclarar que es recomendable que esa persona de confianza esté en un estado sobrio y
+                        que a su vez esté informado sobre qué son los hongos mágicos.
+                    </p>
+                </div>
+            </div>
+
+            <div class="ke">
+                <div class="titulos f" id="titulo5">
+                    <h2>H I D R A T A C I O N <br>& <br>A L I M E N T A C I O N</h2>
+                </div>
+                <div class="conten f" id="conten5">
+                    <p>
+                        Poseer una hidratación como una alimentación adecuada puede ayudar a reducir la posibilidad de
+                        malestares físicos. La psilocibina a menudo se consume mejor con el estómago relativamente
+                        vacío.
+                    </p>
+                </div>
+            </div>
+
+            <div class="ke">
+                <div class="titulos g" id="titulo6">
+                    <h2>P R E P A R A C I Ó N - P A R A<br>P O S I B L E S - D E S A F Í O S</h2>
+                </div>
+                <div class="conten g" id="conten6">
+                    <p>
+                        Como hemos hecho mención en la primera precaución, la información es crucial en esto. Hay que
+                        recordar que los viajes psicodélicos pueden presentar desafíos emocionales y psicológicos.
+                        En el caso de afrontar ciertas dificultades durante el viaje, es recomendable tener ciertas
+                        estrategias como también puede ser un plan de acción.
+                    </p>
+                </div>
+
             </div>
         </div>
-    
-        <div class="ke">
-            <div class="titulos f" id="titulo5">
-                <h2>H I D R A T A C I O N <br>& <br>A L I M E N T A C I O N</h2>
-            </div>
-            <div class="conten f" id="conten5">
-                <p>
-                    Poseer una hidratación como una alimentación adecuada puede ayudar a reducir la posibilidad de malestares físicos. La psilocibina a menudo se consume mejor con el estómago relativamente vacío. 
-                </p>
-            </div>
-        </div>
-    
-        <div class="ke">
-            <div class="titulos g" id="titulo6">
-                <h2>P R E P A R A C I Ó N - P A R A<br>P O S I B L E S - D E S A F Í O S</h2>
-            </div>
-            <div class="conten g" id="conten6">
-                <p>
-                    Como hemos hecho mención en la primera precaución, la información es crucial en esto. Hay que recordar que los viajes psicodélicos pueden presentar desafíos emocionales y psicológicos. 
-                    En el caso de afrontar ciertas dificultades durante el viaje, es recomendable tener ciertas estrategias como también puede ser un plan de acción. 
-                </p>
-            </div>
-    
-        </div>
-    </div>
 
 
-</section>
-<!-- footer -->
+    </section>
+    <!-- footer -->
     <footer>
         <!-- <div class="box">   
         </div> -->
 
-    <!-- enlaces -->
+        <!-- enlaces -->
         <div class="enlaces">
-                <div class="filas">
-                   <a href="#" onclick="redireccionar()">Source</a>
-                   <a href="#">||</a>
-                   <a href="#" onclick="redireccionar()">Mazzei</a>
-                   <a href="#">||</a>
-                   <a href="#" onclick="redireccionar()">SysteMarzz</a>
-                   <a href="#">||</a>
-                   <a href="/fs/formulario.html">Contactanos</a>
-                </div>
+            <div class="filas">
+                <a href="#" onclick="redireccionar('https://github.com/DMarzzucco/fasin.git')">Source</a>
+                <a href="#">||</a>
+                <a href="#" onclick="redireccionar('https://www.linkedin.com/in/franco-mazzei-813763267/')">Mazzei</a>
+                <a href="#">||</a>
+                <a href="#" onclick="redireccionar('https://systemarzz77.000webhostapp.com/')">SysteMarzz</a>
+                <a href="#">||</a>
+                <a href="/formulario.html">Contactanos</a>
             </div>
+        </div>
 
         <!-- derechode autor -->
         <div class="copia-deauto">
             <small>&copy;2023 <b>Mazzei & SysteMarzz</b> - Todos los Derechos Reservados.</small>
         </div>
     </footer>
-        <!-- en el caso que quieras tener tu propio documento js en la carpeta solo debes sacar el '/' -->
+    <!-- en el caso que quieras tener tu propio documento js en la carpeta solo debes sacar el '/' -->
     <script src="hongos.js"></script>
     </section>
 
 </body>
+
 </html>
