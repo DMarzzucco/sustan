@@ -37,35 +37,41 @@ body {
 }
 
 /* nav  */
-nav{
+nav {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .nav-list {
   display: flex;
   justify-content: space-between;
 }
+
 .nav-list ul {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.nav-list li{
+
+.nav-list li {
   list-style: none;
 }
-.nav-list a{
+
+.nav-list a {
   text-decoration: none;
   color: #B2FF4D;
   transition: 0.5s;
   padding: 9px 9px;
 }
-.nav-list a:hover{
+
+.nav-list a:hover {
   background-color: #b2ff4d84;
   color: #1e2525;
   border-radius: 30px;
   font-size: 20px;
 }
+
 .nav-responsive {
   display: none;
 }
@@ -1551,7 +1557,7 @@ footer .copia-deauto {
     position: absolute;
     right: 0;
     top: 9.7%;
-    background:#1e2525;
+    background: #1e2525;
     width: 180px;
   }
 
@@ -1695,6 +1701,131 @@ footer .copia-deauto {
     font-size: 17px;
     width: 400px;
   }
+
+  /* consumo */
+  .consumo .p {
+    border: none;
+  }
+
+  .consumo .p h1 {
+    background-color: white;
+    color: #1e2525;
+    width: 100%;
+  }
+
+  .consumo .p p {
+    width: 350px;
+  }
+
+  /*  */
+  .list-con .kan {
+    width: 300px;
+  }
+
+  /* efectos */
+  .efectos {
+    padding: 0px 0px;
+  }
+
+  .efectos .p {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .efectos .p h1 {
+    background-color: white;
+    color: #1e2525;
+    width: 100%;
+  }
+
+  .efectos .p p {
+    width: 300px;
+  }
+
+  .ifect {
+    height: auto;
+    padding: 0 0;
+  }
+
+  .ifect h1 {
+    font-size: 40px;
+  }
+
+  .ifect .efectos-filas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0;
+  }
+  .ifect .efectos-filas .tart{
+    margin: 8px;
+  }
+  .ifect .efectos-filas .conten {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+  }
+
+  .ifect .efectos-filas .conten p {
+    width: 396px;
+  }
+  .pstv-cons .positiv{
+    display: flex;
+    flex-direction: column;
+    padding: 0 0;
+  }
+  .pstv-cons .positiv h2{
+    text-align: left;
+  }
+  .pstv-cons .positiv p {
+    width: 350px;
+  }
+  /*  */
+  .concens-con .negativo div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .concens-con .negativo p{
+    width: 400px;
+  }
+  /*  */
+  .concens-con .filas-negativ{
+    display: flex;
+    flex-direction: column;
+    padding: 0 0;
+  }
+  .concens-con .filas-negativ .tab{
+    padding: 0 0;
+  }
+  
+  /* hibridos */
+  /* precauciones */
+  /* concecuencias */
+  .concecuencias{
+    padding: 0 0;
+  }
+  .concecuencias .p{
+    border: none;
+  }
+  .concecuencias .p p{
+    width: 400px;
+  }
+  .concecuencias h1{
+    font-size: 30px;
+    background-color: white;
+    color: #1e2525;
+    width: 100%;
+  }
+
+
+
 
   /* footer */
   footer .box {
